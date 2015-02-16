@@ -98,6 +98,7 @@ tags: C++, tocheck
 98.[Publishing Your Windows 8 App Part 3 Submitting to the Store: Video](https://www.youtube.com/watch?v=LVoN_lcYUUA)
 99.[Windows 8 Store App Submission Guide: Video](https://www.youtube.com/watch?v=ebDfvtSmrdU)
 100.[Публикация приложений для Windows](https://dev.windows.com/ru-ru/publish)
+101.[How to preview PDFs in Windows Explorer](http://www.pcworld.com/article/2082239/how-to-preview-pdfs-in-windows-explorer.html)
 
 
 
