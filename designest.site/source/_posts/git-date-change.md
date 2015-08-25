@@ -205,7 +205,7 @@ CommitDate: Fri Dec 25 19:05:40 2015 +0300
 ну далее пушим в origin
 
 Вывод: 
-три команды, которые нужно запомнить:
+пять команд, которые нужно запомнить:
 ```
 $ new_date=$(stat -c %y git-date-change.md)
 $ git add git-date-change.md
@@ -213,16 +213,4 @@ $ git commit --date="$new_date" -m "The 5 command to remember"
 $ GIT_COMMITTER_DATE="$new_date"  git commit --amend --date="$new_date" -C HEAD
 $ git push
 ```
-
-
-
-
-
-
-
-
-
-
- 
-
                                              
