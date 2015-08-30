@@ -79,6 +79,8 @@ tags: C++, tocheck
 79.[The next-generation JavaScript module bundler](http://rollupjs.org/)
 80.[JavaScript: The Definitive Guide, Second Edition, January 1997, FTP](ftp://ftp.ora.com/pub/examples/nutshell/javascript)
 81.[Finding the memory usage of JavaScript objects](http://code.stephenmorley.org/javascript/finding-the-memory-usage-of-objects/)
+82.[Магия JavaScript: arguments](http://habrahabr.ru/post/117868/)
+
 
 
 
