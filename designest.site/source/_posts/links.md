@@ -80,6 +80,8 @@ tags: C++, tocheck
 80.[JavaScript: The Definitive Guide, Second Edition, January 1997, FTP](ftp://ftp.ora.com/pub/examples/nutshell/javascript)
 81.[Finding the memory usage of JavaScript objects](http://code.stephenmorley.org/javascript/finding-the-memory-usage-of-objects/)
 82.[Магия JavaScript: arguments](http://habrahabr.ru/post/117868/)
+83.[Communicating With Other Scripts](https://developer.mozilla.org/en-US/Add-ons/SDK/Guides/Content_Scripts/Communicating_With_Other_Scripts#Using_the_DOM_postMessage_API)
+
 
 
 
