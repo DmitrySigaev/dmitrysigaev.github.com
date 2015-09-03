@@ -82,7 +82,7 @@ tags: C++, tocheck
 82.[Магия JavaScript: arguments](http://habrahabr.ru/post/117868/)
 83.[Communicating With Other Scripts](https://developer.mozilla.org/en-US/Add-ons/SDK/Guides/Content_Scripts/Communicating_With_Other_Scripts#Using_the_DOM_postMessage_API)
 84.[Interacting with page scripts](https://developer.mozilla.org/en-US/Add-ons/SDK/Guides/Content_Scripts/Interacting_with_page_scripts)
-
+85.[Cordova-Examples](https://github.com/cfjedimaster/Cordova-Examples)
 
 
 
