@@ -83,6 +83,7 @@ tags: C++, tocheck
 83.[Communicating With Other Scripts](https://developer.mozilla.org/en-US/Add-ons/SDK/Guides/Content_Scripts/Communicating_With_Other_Scripts#Using_the_DOM_postMessage_API)
 84.[Interacting with page scripts](https://developer.mozilla.org/en-US/Add-ons/SDK/Guides/Content_Scripts/Interacting_with_page_scripts)
 85.[Cordova-Examples](https://github.com/cfjedimaster/Cordova-Examples)
+86.[Cordova-Examples Site](http://www.raymondcamden.com/2014/11/05/Cordova-Example-Writing-to-a-file/)
 
 
 
