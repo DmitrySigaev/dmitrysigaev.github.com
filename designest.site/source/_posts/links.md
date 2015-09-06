@@ -85,6 +85,7 @@ tags: C++, tocheck
 85.[Cordova-Examples](https://github.com/cfjedimaster/Cordova-Examples)
 86.[Cordova-Examples Site](http://www.raymondcamden.com/2014/11/05/Cordova-Example-Writing-to-a-file/)
 87.[Beautiful math in all browsers http://www.mathjax.org/](https://github.com/mathjax/MathJax)
+88.[A Globally Recognized Avatar](http://en.gravatar.com/)
 
 
 
