@@ -87,6 +87,7 @@ tags: C++, tocheck
 87.[Beautiful math in all browsers http://www.mathjax.org/](https://github.com/mathjax/MathJax)
 88.[A Globally Recognized Avatar](http://en.gravatar.com/)
 89.[Building Xbox One Apps using HTML and JavaScript](https://channel9.msdn.com/Events/Build/2014/2-647)
+90.[Знакомимся с элементами управления библиотеки WinJS](http://habrahabr.ru/company/microsoft/blog/238709/)
 
 
 
