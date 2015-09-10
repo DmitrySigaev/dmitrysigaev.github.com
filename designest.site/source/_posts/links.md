@@ -88,6 +88,7 @@ tags: C++, tocheck
 88.[A Globally Recognized Avatar](http://en.gravatar.com/)
 89.[Building Xbox One Apps using HTML and JavaScript](https://channel9.msdn.com/Events/Build/2014/2-647)
 90.[Знакомимся с элементами управления библиотеки WinJS](http://habrahabr.ru/company/microsoft/blog/238709/)
+91.[Компиляция iOS приложений для Windows Store](https://habrahabr.ru/company/microsoft/blog/264321/)
 
 
 
