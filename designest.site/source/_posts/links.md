@@ -94,6 +94,7 @@ tags: C++, tocheck
 94.[Gaurav Seth & Steve Lucco - Inside Chakra - JSConf US 2015](https://www.youtube.com/watch?v=en1VCmbI7Fc)
 95.[ChakraCore: проверка JavaScript-движка для Microsoft Edge](https://habrahabr.ru/company/pvs-studio/blog/275701/)
 96.[Исходный код JavaScript-движка ChakraCore выложен на GitHub](https://habrahabr.ru/company/microsoft/blog/275067/)
+97.[How to Submit Android App To Google Play Store: Video](https://www.youtube.com/watch?v=o5Zvxbe1TME)
 
 
 
