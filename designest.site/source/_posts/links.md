@@ -95,6 +95,7 @@ tags: C++, tocheck
 95.[ChakraCore: проверка JavaScript-движка для Microsoft Edge](https://habrahabr.ru/company/pvs-studio/blog/275701/)
 96.[Исходный код JavaScript-движка ChakraCore выложен на GitHub](https://habrahabr.ru/company/microsoft/blog/275067/)
 97.[How to Submit Android App To Google Play Store: Video](https://www.youtube.com/watch?v=o5Zvxbe1TME)
+98.[Publishing Your Windows 8 App Part 3 Submitting to the Store: Video](https://www.youtube.com/watch?v=LVoN_lcYUUA)
 
 
 
