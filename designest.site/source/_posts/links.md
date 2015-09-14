@@ -97,6 +97,7 @@ tags: C++, tocheck
 97.[How to Submit Android App To Google Play Store: Video](https://www.youtube.com/watch?v=o5Zvxbe1TME)
 98.[Publishing Your Windows 8 App Part 3 Submitting to the Store: Video](https://www.youtube.com/watch?v=LVoN_lcYUUA)
 99.[Windows 8 Store App Submission Guide: Video](https://www.youtube.com/watch?v=ebDfvtSmrdU)
+100.[Публикация приложений для Windows](https://dev.windows.com/ru-ru/publish)
 
 
 
