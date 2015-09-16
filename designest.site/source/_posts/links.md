@@ -99,6 +99,7 @@ tags: C++, tocheck
 99.[Windows 8 Store App Submission Guide: Video](https://www.youtube.com/watch?v=ebDfvtSmrdU)
 100.[Публикация приложений для Windows](https://dev.windows.com/ru-ru/publish)
 101.[How to preview PDFs in Windows Explorer](http://www.pcworld.com/article/2082239/how-to-preview-pdfs-in-windows-explorer.html)
+102.[.NET PDF viewer based on Chrome pdf.dll and xPDF](https://github.com/pvginkel/PdfViewer)
 
 
 
