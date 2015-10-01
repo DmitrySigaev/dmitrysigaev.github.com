@@ -1,0 +1,3 @@
+[submodule "designest.site/themes/hueman"]
+	path = designest.site/themes/hueman
+	url = ../hexo-theme-hueman.git
