@@ -1,6 +1,6 @@
 title: Links
 date: 2013-10-01 14:47:26
-tags: C++
+tags: C++, tocheck
 ---
 
 ## Current Reading
@@ -15,3 +15,4 @@ tags: C++
 9. [Connect-SDK-Windows](https://github.com/DmitrySigaev/Connect-SDK-Windows)
 10.[Connect-SDK site](http://connectsdk.com/)
 11.[Streaming with nginx-rtmp-module](http://nginx-rtmp.blogspot.ru/)
+12.[Alexey Paznikov: Multithreading, scalability, distributed computer systems, MPI, parallel programming](http://www.slideshare.net/apaznikov)
