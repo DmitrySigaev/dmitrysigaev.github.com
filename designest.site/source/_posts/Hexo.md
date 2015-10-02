@@ -1,6 +1,22 @@
-title: Hello World
+title: Try to use Hexo with Node.js
+date: 2013-10-01 18:47:26
+tags: Hexo.js, Node.js
 ---
-Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documentation](http://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](http://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+
+Hexo is a fast, simple & powerful blog framework, possibly.
+## Requirements
+
+All you need to use Hexo to install Node.js and Git.
+Lets' try [Hexo](http://hexo.io/).
+
+## Instalation
+
+``` bash
+npm install hexo-cli -g
+hexo init blog
+cd blog
+npm install
+```
 
 ## Quick Start
 
