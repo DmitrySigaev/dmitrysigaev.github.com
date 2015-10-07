@@ -17,3 +17,4 @@ tags: C++, tocheck
 11.[Streaming with nginx-rtmp-module](http://nginx-rtmp.blogspot.ru/)
 12.[Alexey Paznikov: Multithreading, scalability, distributed computer systems, MPI, parallel programming](http://www.slideshare.net/apaznikov)
 13.[Writing cross-platform Node.js](http://shapeshed.com/writing-cross-platform-node/)
+14.[Web Speech API Demonstration](https://www.google.com/intl/en/chrome/demos/speech.html)
