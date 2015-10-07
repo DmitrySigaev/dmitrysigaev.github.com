@@ -3,7 +3,8 @@ date: 2013-10-02 16:37:17
 tags: Hexo.js, Node.js
 ---
 
-![Node Package Manager ](images/npm.png)
+![Node Package Manager ](/images/npm.png)
+new ntest
 
 Testing Image
 Inserts an image in posts with specified size.
