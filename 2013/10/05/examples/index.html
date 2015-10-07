@@ -58,7 +58,7 @@
               
                 <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
               
-                    
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Hexo/">Hexo</a></li></ul>
                   
                 <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
               
@@ -107,7 +107,7 @@
         <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'Standard ECMA-262 3rd Edition - December 1999:'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'Variable object:'</span>);</span><br><span class="line"><span class="comment">/*</span><br><span class="line"> * Always in programs we declare functions and variables which then successfully use building our systems.</span><br><span class="line"> * But how and where the interpreter finds our data (functions, variable)?</span><br><span class="line"> *  What occurs, when we reference to needed objects?</span><br><span class="line"> *  Many ECMAScript programmers know that variables are closely related with the execution context:</span><br><span class="line"> * */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>; <span class="comment">// variable of the global context</span></span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> b = <span class="number">20</span>; <span class="comment">// local variable of the function context</span></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 10</span></span><br><span class="line"><span class="comment">// check: console.log(b); // "b" is not defined</span></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> * Also, many programmers know that the isolated scope in the current version of specification is created </span><br><span class="line"> * only by execution contexts with �function� code type. I.e., in contrast with C/C++, for example</span><br><span class="line"> *  the block of for loop in ECMAScript does not create a local context:</span><br><span class="line"> *  */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> k <span class="keyword">in</span> &#123; a: <span class="number">1</span>, b: <span class="number">2</span> &#125;) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'k'</span>+ k);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'k'</span> + k); <span class="comment">// variable "k" still in scope even the loop is finished</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> * Variable object in global context</span><br><span class="line">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">'test'</span>);</span><br><span class="line">b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// ��������, ����� ������� � VO(globalContext): "test"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//node.js fix console.log(window['a']); // �������� ����� global === VO(globalContext): "test"</span></span><br><span class="line"><span class="built_in">console</span>.log(a === <span class="keyword">this</span>.a); <span class="comment">// true(browser) : false in node.js this.a is undefined</span></span><br><span class="line"></span><br><span class="line">exports.a = a;</span><br><span class="line"><span class="built_in">console</span>.log(a === <span class="keyword">this</span>.a); <span class="comment">// true beacause this is exports;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// var aKey = 'a';</span></span><br><span class="line"><span class="comment">// console.log(window[aKey]); // ��������, ��� �������� ������������ ������: "test"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> * Variable object in function context</span><br><span class="line"> * </span><br><span class="line"> * Regarding the execution context of functions � there VO is inaccessible directly,</span><br><span class="line"> * and its role plays so - called an activation object(in abbreviated form � AO).</span><br><span class="line"> * </span><br><span class="line"> * VO(functionContext) === AO;</span><br><span class="line"> * </span><br><span class="line"> * An activation object is created on entering the context of a function and initialized </span><br><span class="line"> * by property arguments which value is the Arguments object:</span><br><span class="line"> *  </span><br><span class="line"> * AO =&#123;</span><br><span class="line"> *   arguments: &lt;ArgO&gt;</span><br><span class="line"> *   &#125;;</span><br><span class="line"> *   </span><br><span class="line"> * </span><br><span class="line"> * Arguments object is a property of the activation object. It contains the following properties:</span><br><span class="line"> * callee � the reference to the current function;</span><br><span class="line"> * length � quantity of real passed arguments;</span><br><span class="line"> * properties-indexes (integer, converted to string) which values are the values of function�s arguments</span><br><span class="line"> *  (from left to right in the list of arguments). </span><br><span class="line"> *  Quantity of these properties-indexes == arguments.length. </span><br><span class="line"> *  Values of properties-indexes of the arguments object and present (really passed) formal parameters are shared.</span><br><span class="line"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">x, y, z</span>) </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// quantity of defined function arguments (x, y, z)</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'foo.length: '</span>+ foo.length); <span class="comment">// 3</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// quantity of really passed arguments (only x, y)</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'arguments.length:'</span> + <span class="built_in">arguments</span>.length); <span class="comment">// 2</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// reference of a function to itself</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'arguments.callee === foo: '</span> + (<span class="built_in">arguments</span>.callee === foo)); <span class="comment">// true</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// parameters sharing</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'x === arguments[0]: '</span> + (x === <span class="built_in">arguments</span>[<span class="number">0</span>])); <span class="comment">// true</span></span><br><span class="line">    <span class="built_in">console</span>.log(x); <span class="comment">// 10</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">arguments</span>[<span class="number">0</span>] = <span class="number">20</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(x); <span class="comment">// 20</span></span><br><span class="line">    </span><br><span class="line">    x = <span class="number">30</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'arguments[0]: '</span>+<span class="built_in">arguments</span>[<span class="number">0</span>]); <span class="comment">// 30</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// however, for not passed argument z,</span></span><br><span class="line">    <span class="comment">// related index-property of the arguments</span></span><br><span class="line">    <span class="comment">// object is not shared</span></span><br><span class="line">    </span><br><span class="line">    z = <span class="number">40</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'arguments[2]:'</span>+ <span class="built_in">arguments</span>[<span class="number">2</span>]); <span class="comment">// undefined</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">arguments</span>[<span class="number">2</span>] = <span class="number">50</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(z); <span class="comment">// 40</span></span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo(<span class="number">10</span>, <span class="number">20</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> * Feature of implementations: property __parent__ </span><br><span class="line"> */</span></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> * As it was already noted, by the standard, to get direct access to the activation object is impossible.</span><br><span class="line"> * However, in some implementations, namely in SpiderMonkey and Rhino, functions have special property __parent__,</span><br><span class="line"> *  which is the reference to the activation object (or the global variable object) </span><br><span class="line"> *  in which these functions have been created. Let's test.</span><br><span class="line"> *  </span><br><span class="line">// console.log(foo.__parent__); So in node.js  __parent__ property doesn't work;</span></span><br></pre></td></tr></table></figure>
       </div>
       <footer class="article-footer">
-        <a data-url="http://designest.ru/2013/10/05/examples/" data-id="ciffn2jbn00004woq8lx6sq6u" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+        <a data-url="http://designest.ru/2013/10/05/examples/" data-id="cifgykf9400095woqk36kkohk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
         
         
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js-JavaScript/">Node.js, JavaScript</a></li></ul>
@@ -144,6 +144,16 @@
     
 <nav id="article-nav">
   
+    <a href="/2015/10/07/insert-image-to-post/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <p class="article-nav-title">
+        
+          insert-image-to-post
+        
+      </p>
+      <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+  
   
     <a href="/2013/10/02/Nodejs-briefly/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">older</strong>
@@ -161,6 +171,26 @@
     <h3 class="widget-title">recents</h3>
     <div class="widget">
       <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/10/07/insert-image-to-post/" class="thumbnail">
+  
+    <span style="background-image:url(/images/svg_text.svg
+)" alt="insert-image-to-post" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/10/07/insert-image-to-post/" class="title">insert-image-to-post</a></p>
+              <p class="item-date"><time datetime="2015-10-07T15:30:51.000Z" itemprop="datePublished">2015-10-07</time></p>
+            </div>
+          </li>
         
           <li>
             
@@ -187,7 +217,7 @@
               
 <a href="/2013/10/02/Nodejs-briefly/" class="thumbnail">
   
-    <span style="background-image:url(images/npm.png
+    <span style="background-image:url(/images/npm.png
 )" alt="Briefly cabbage for Node js" class="thumbnail-image"></span>
   
 </a>
@@ -198,6 +228,25 @@
               <p class="item-category"></p>
               <p class="item-title"><a href="/2013/10/02/Nodejs-briefly/" class="title">Briefly cabbage for Node js</a></p>
               <p class="item-date"><time datetime="2013-10-02T13:37:17.000Z" itemprop="datePublished">2013-10-02</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2013/10/01/Hexo-images/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Hexo/">Hexo</a></p>
+              <p class="item-title"><a href="/2013/10/01/Hexo-images/" class="title">How to insert images in your Hexo post</a></p>
+              <p class="item-date"><time datetime="2013-10-01T16:47:26.000Z" itemprop="datePublished">2013-10-01</time></p>
             </div>
           </li>
         
@@ -220,58 +269,26 @@
             </div>
           </li>
         
-          <li>
-            
-            <div class="item-thumbnail">
-              
-<a href="/2013/10/01/Start-to-use-Nodejs/" class="thumbnail">
-  
-    <span style="background-image:url(https://download-codeplex.sec.s-msft.com/Download?ProjectName=nodejstools&amp;amp;DownloadId=761175&amp;amp;Build=20959
-)" alt="Let&#39;s start Node.js studying" class="thumbnail-image"></span>
-  
-</a>
-
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"></p>
-              <p class="item-title"><a href="/2013/10/01/Start-to-use-Nodejs/" class="title">Let&#39;s start Node.js studying</a></p>
-              <p class="item-date"><time datetime="2013-10-01T14:47:26.000Z" itemprop="datePublished">2013-10-01</time></p>
-            </div>
-          </li>
-        
-          <li>
-            
-            <div class="item-thumbnail">
-              
-<a href="/2013/10/01/links/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-
-            </div>
-            
-            <div class="item-inner">
-              <p class="item-category"></p>
-              <p class="item-title"><a href="/2013/10/01/links/" class="title">Links</a></p>
-              <p class="item-date"><time datetime="2013-10-01T11:47:26.000Z" itemprop="datePublished">2013-10-01</time></p>
-            </div>
-          </li>
-        
       </ul>
     </div>
   </div>
 
     
       
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">October 2013</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">October 2013</a><span class="archive-list-count">6</span></li></ul>
     </div>
   </div>
 
@@ -281,7 +298,7 @@
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-tocheck/">C++, tocheck</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo-js-Node-js/">Hexo.js, Node.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js-JavaScript/">Node.js, JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js-Visual-Studio/">Node.js, Visual Studio</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-tocheck/">C++, tocheck</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo-js-Node-js/">Hexo.js, Node.js</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js-JavaScript/">Node.js, JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js-Visual-Studio/">Node.js, Visual Studio</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 

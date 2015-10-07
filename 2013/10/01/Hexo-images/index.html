@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: Node.js, JavaScript | DESIGNest</title>
+  <title>How to insert images in your Hexo post | DESIGNest</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DESIGNest">
-<meta property="og:url" content="http://designest.ru/tags/Node-js-JavaScript/index.html">
+  <meta name="description" content="I had started using of Hexo, but Hexo docs are not exhaustive.So I have decided to describe in my blog how it can be done in different ways.You can choose yourself.
+After Hexo instalation your folder">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to insert images in your Hexo post">
+<meta property="og:url" content="http://designest.ru/2013/10/01/Hexo-images/index.html">
 <meta property="og:site_name" content="DESIGNest">
-<meta property="og:description">
+<meta property="og:description" content="I had started using of Hexo, but Hexo docs are not exhaustive.So I have decided to describe in my blog how it can be done in different ways.You can choose yourself.
+After Hexo instalation your folder">
+<meta property="og:updated_time" content="2015-10-07T15:38:58.639Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DESIGNest">
-<meta name="twitter:description">
+<meta name="twitter:title" content="How to insert images in your Hexo post">
+<meta name="twitter:description" content="I had started using of Hexo, but Hexo docs are not exhaustive.So I have decided to describe in my blog how it can be done in different ways.You can choose yourself.
+After Hexo instalation your folder">
   
   
     <link rel="icon" href="/favicon.png">
@@ -79,59 +83,56 @@
           <section id="main">
             <div class="main-body-header">
 
-              <h1 class="header"><i class="icon fa fa-tag"></i>tag : <em>Node.js, JavaScript</em></h1>
+              <h1 class="header"><a class="page-title-link" href="/categories/Hexo/">Hexo</a></h1>
             </div>
             <div class="main-body-content">
               
-  
-  
-    
-    
+  <article id="post-Hexo-images" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!--  -->
       
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2013" class="archive-year"><i class="icon fa fa-calendar-o"></i>2013</a>
-        </div>
-        <div class="archives">
-    
-    
-    
-      <div class="article-row">
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
-      
-<a href="/2013/10/05/examples/" class="thumbnail">
+        <header class="article-header">
+          
   
-    <span class="thumbnail-image thumbnail-none"></span>
+    <h1 class="article-title" itemprop="name">
+      How to insert images in your Hexo post
+    </h1>
   
-</a>
 
-      <div class="article-meta">
-        <p class="category"></p>
-        <p class="date"><time datetime="2013-10-05T11:43:21.000Z" itemprop="datePublished">2013-10-05</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2013/10/05/examples/" class="title">my testing JS in  Node.js</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210
+        </header>
+      
+      <p class="article-byline">
+        <a href="/2013/10/01/Hexo-images/" class="article-date">
+  <time datetime="2013-10-01T16:47:26.000Z" itemprop="datePublished">2013-10-01</time>
+</a>
       </p>
+      <div class="article-entry" itemprop="articleBody">
+        <p>I had started using of Hexo, but Hexo docs are not exhaustive.<br>So I have decided to describe in my blog how it can be done in different ways.<br>You can choose yourself.</p>
+<p>After Hexo instalation your folder tree looks like:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#10;+-- _config.yml&#10;+-- package.json&#10;+-- scaffolds&#10;+-- scripts&#10;+-- source&#10;|   +-- _drafts&#10;|   L-- _posts&#10;L-- themes</span><br></pre></td></tr></table></figure>
+<p>I will describe about the structure in next time. Now we should look at source folder.</p>
+<h3 id="source">source</h3><p>Source folder. This is where you put your site’s content.<br>Hexo ignores hidden files and files or folders whose names are prefixed with <code>_</code> (underscore) - except the <code>_posts</code> folder.<br>Renderable files (e.g. Markdown, HTML) will be processed and put into the <code>public</code> folder, while other files will simply be copied.</p>
+<p>So. Let’s create a new <code>images</code> folder inside of <code>source</code> folder:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#10;+-- _config.yml&#10;+-- package.json&#10;+-- scaffolds&#10;+-- scripts&#10;+-- source&#10;|   +-- images&#10;|   +-- _drafts&#10;|   L-- _posts&#10;L-- themes</span><br></pre></td></tr></table></figure>
+<p>This <code>images</code> folder will simply be copied to <code>public</code> folder when you type <code>hexo generate</code> command.</p>
+<p>Let’s insert <code>test.png</code> file to <code>images</code> folder.<br>and create a new article:</p>
+<h2 id="new">new</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new insert-image-to-post</span><br></pre></td></tr></table></figure>
+<p>Above command will created insert-image-to-post.md file(post)<br>In the end ofinsert-image-to-post.md file we should insert string:</p>
+<p><code>![Test PNG image ](/images/test.png)</code></p>
+<p>Also when you view your site by <code>hexo server</code> all should look good.</p>
+
+      </div>
+      <footer class="article-footer">
+        <a data-url="http://designest.ru/2013/10/01/Hexo-images/" data-id="cifgykf8p00005woq3oj5f0se" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+        
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo-js-Node-js/">Hexo.js, Node.js</a></li></ul>
+
+      </footer>
     </div>
   </article>
-
-    
-      </div>
-    
   
   
-    </div></section>
-  
-  
-
 
             </div>
           </section>
@@ -155,6 +156,29 @@
       
     </ul>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/10/02/Nodejs-briefly/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <p class="article-nav-title">
+        
+          Briefly cabbage for Node js
+        
+      </p>
+      <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+  
+  
+    <a href="/2013/10/01/Hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <p class="article-nav-title">Try to use Hexo with Node.js</p>
+      <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+    </a>
+  
+</nav>
+
   
   <div class="widgets-container">
     
