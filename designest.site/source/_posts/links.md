@@ -19,3 +19,4 @@ tags: C++, tocheck
 13.[Writing cross-platform Node.js](http://shapeshed.com/writing-cross-platform-node/)
 14.[Web Speech API Demonstration](https://www.google.com/intl/en/chrome/demos/speech.html)
 15.[Indigo Toolkit:Building from sources](http://lifescience.opensource.epam.com/indigo/build.html#python)
+16.[Сложные формы инфинитива](http://www.alleng.ru/mybook/3gram/6verb_non-fin_inf5.htm)
