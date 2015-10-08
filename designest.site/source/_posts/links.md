@@ -18,3 +18,4 @@ tags: C++, tocheck
 12.[Alexey Paznikov: Multithreading, scalability, distributed computer systems, MPI, parallel programming](http://www.slideshare.net/apaznikov)
 13.[Writing cross-platform Node.js](http://shapeshed.com/writing-cross-platform-node/)
 14.[Web Speech API Demonstration](https://www.google.com/intl/en/chrome/demos/speech.html)
+15.[Indigo Toolkit:Building from sources](http://lifescience.opensource.epam.com/indigo/build.html#python)
