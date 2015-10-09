@@ -33,6 +33,6 @@ Reboot computer
 
 Another way:
 
-- Open Control Panel
-- Go to Program section -> Turn Windows features on or off
-- Disable Hyper-V 
+1. Open Control Panel
+2. Go to Program section -> Turn Windows features on or off
+3. Disable Hyper-V 
