@@ -1,6 +1,8 @@
 title: 'VirtualBox: Error -> VT-x is not available'
 date: 2014-10-09 16:43:43
-tags:
+tags: VirtualBox
+categories:
+ - Issues
 ---
 
 Sometimes you can get "VT-x is not available. (VERR_VMX_NO_VMX)" error if you are trying to start x64 bit virtual machine in VirtualBox.
