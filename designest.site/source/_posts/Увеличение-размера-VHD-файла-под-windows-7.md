@@ -20,7 +20,7 @@ categories:
 
 # Проблема (Issue): Как увеличить размер VHD файла под windows 10.
 
-VirtualBox 5.0 такой возможности не дает, а жаль! Интернет мне в помощь, но все что выдают мне поисковики это - утилита VHDResizer. Вопрос: Зачем не засорять свою систему этим VHDResizer? Неужели windows 10 не справиться с этим!?
+VirtualBox 5.0 такой возможности не дает, а жаль! Интернет мне в помощь, но все что выдают мне поисковики это - утилита VHDResizer. Вопрос: Зачем мне засорять свою систему этим VHDResizer? Неужели windows 10 не справиться с этим!?
 
 # Решение (Resolve)
 
@@ -50,5 +50,50 @@ expand vdisk maximum="размер в мб
 - Merge   vdisk 
 - Select  vdisk 
 
+# Поэкспериментируем
 
+Запускаем из командной строки DiskPart:
+```
+Microsoft DiskPart version 10.0.10240
 
+Copyright (C) 1999-2013 Microsoft Corporation.
+On computer: EPRUPET
+
+DISKPART> list vdisk
+
+There are no virtual disks to show.
+
+```
+
+Перемещаем фокус на виртуальный диск:
+
+```
+DISKPART> select vdisk file="f:\VBDisks\W7\W7.vhd"
+
+DiskPart successfully selected the virtual disk file.
+```
+Вводим команду лист:
+```
+DISKPART> list vdisk
+
+  VDisk ###  Disk ###  State                 Type       File
+  ---------  --------  --------------------  ---------  ----
+* VDisk 0    Disk ---  Added                 Unknown     f:\VBDisks\W7\W7.vhd
+```
+Смотрим детальную информацию:
+
+```
+DISKPART> detail vdisk
+
+Device type ID: 0 (Unknown)
+Vendor ID: {00000000-0000-0000-0000-000000000000} (Unknown)
+State: Added
+Virtual size:  102 GB
+Physical size:   28 GB
+Filename: f:\VBDisks\W7\W7.vhd
+Is Child: No
+Parent Filename:
+Associated disk#: Not found.
+
+DISKPART>
+```
