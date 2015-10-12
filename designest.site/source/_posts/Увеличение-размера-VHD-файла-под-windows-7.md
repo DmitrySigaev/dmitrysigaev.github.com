@@ -39,3 +39,16 @@ select vdisk file="полный путь к файлу"
 expand vdisk maximum="размер в мб
 
 ```
+
+На самом деле есть целый список команд в утилите diskpart для работы с виртуальном диском VHD:
+
+- Attach  vdisk 
+- Compact vdisk 
+- Create  vdisk 
+- Detail  vdisk 
+- Expand  vdisk 
+- Merge   vdisk 
+- Select  vdisk 
+
+
+
