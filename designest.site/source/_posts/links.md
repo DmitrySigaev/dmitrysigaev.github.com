@@ -30,3 +30,4 @@ tags: C++, tocheck
 23.[Устанавливаем Windows 8 второй системой в VHD файл. Проблемы и решения.](https://tech.anisotropic.ru/virtual/ustanavlivaem-windows-8-v-vhd-fajl/)
 24.[Creating Slick HTML Presentations Using reveal.js](http://www.sitepoint.com/creating-slick-html-presentations-using-reveal-js/)
 25.[!!! Optimised Naive Bayesian classifier for NodeJS](https://github.com/73rhodes/dclassify)
+26.[Presentations that I've given. See!!!](https://github.com/73rhodes/talks)
