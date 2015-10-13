@@ -32,3 +32,4 @@ tags: C++, tocheck
 25.[!!! Optimised Naive Bayesian classifier for NodeJS](https://github.com/73rhodes/dclassify)
 26.[Presentations that I've given. See!!!](https://github.com/73rhodes/talks)
 27.[slides.com/](http://slides.com/)
+28.[Some Game by using Node. student](https://github.com/amikstrike/wn/blob/master/server.js)
