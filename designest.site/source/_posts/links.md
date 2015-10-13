@@ -31,3 +31,4 @@ tags: C++, tocheck
 24.[Creating Slick HTML Presentations Using reveal.js](http://www.sitepoint.com/creating-slick-html-presentations-using-reveal-js/)
 25.[!!! Optimised Naive Bayesian classifier for NodeJS](https://github.com/73rhodes/dclassify)
 26.[Presentations that I've given. See!!!](https://github.com/73rhodes/talks)
+27.[slides.com/](http://slides.com/)
