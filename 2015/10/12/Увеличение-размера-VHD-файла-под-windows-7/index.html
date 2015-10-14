@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>insert-image-to-post | DESIGNest</title>
+  <title>Увеличение размера VHD файла под windows 10 | DESIGNest</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I have decided to test SVG picture:">
+  <meta name="description" content="Как увеличить размер VHD файла под windows 10. VirtualBox 5.0 такой возможности не дает, а жаль!Когда я решил создать виртуальную машину в VirtualBox (Oracle VM VirtualBox — программный продукт виртуа">
 <meta property="og:type" content="article">
-<meta property="og:title" content="insert-image-to-post">
-<meta property="og:url" content="http://designest.ru/2015/10/07/insert-image-to-post/index.html">
+<meta property="og:title" content="Увеличение размера VHD файла под windows 10">
+<meta property="og:url" content="http://designest.ru/2015/10/12/Увеличение-размера-VHD-файла-под-windows-7/index.html">
 <meta property="og:site_name" content="DESIGNest">
-<meta property="og:description" content="I have decided to test SVG picture:">
-<meta property="og:image" content="http://designest.ru/images/svg_text.svg">
-<meta property="og:updated_time" content="2015-10-07T19:27:57.773Z">
+<meta property="og:description" content="Как увеличить размер VHD файла под windows 10. VirtualBox 5.0 такой возможности не дает, а жаль!Когда я решил создать виртуальную машину в VirtualBox (Oracle VM VirtualBox — программный продукт виртуа">
+<meta property="og:image" content="http://designest.ru/images/pinch_expand.jpg">
+<meta property="og:updated_time" content="2015-10-12T19:38:45.168Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="insert-image-to-post">
-<meta name="twitter:description" content="I have decided to test SVG picture:">
+<meta name="twitter:title" content="Увеличение размера VHD файла под windows 10">
+<meta name="twitter:description" content="Как увеличить размер VHD файла под windows 10. VirtualBox 5.0 такой возможности не дает, а жаль!Когда я решил создать виртуальную машину в VirtualBox (Oracle VM VirtualBox — программный продукт виртуа">
   
   
     <link rel="icon" href="/favicon.png">
@@ -81,11 +81,11 @@
           <section id="main">
             <div class="main-body-header">
 
-              <h1 class="header">uncategorized</h1>
+              <h1 class="header"><a class="page-title-link" href="/categories/Issues/">Issues</a></h1>
             </div>
             <div class="main-body-content">
               
-  <article id="post-insert-image-to-post" class="article article-single article-type-post" itemscope itemprop="blogPost">
+  <article id="post-Увеличение-размера-VHD-файла-под-windows-7" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
       <!--  -->
       
@@ -93,26 +93,55 @@
           
   
     <h1 class="article-title" itemprop="name">
-      insert-image-to-post
+      Увеличение размера VHD файла под windows 10
     </h1>
   
 
         </header>
       
       <p class="article-byline">
-        <a href="/2015/10/07/insert-image-to-post/" class="article-date">
-  <time datetime="2015-10-07T15:30:51.000Z" itemprop="datePublished">2015-10-07</time>
+        <a href="/2015/10/12/Увеличение-размера-VHD-файла-под-windows-7/" class="article-date">
+  <time datetime="2015-10-12T17:34:25.000Z" itemprop="datePublished">2015-10-12</time>
 </a>
       </p>
       <div class="article-entry" itemprop="articleBody">
-        <p>I have decided to test SVG picture:</p>
-<p><img src="/images/svg_text.svg" alt="SVG text "></p>
+        <p><img src="/images/pinch_expand.jpg" alt=""></p>
+<h1 id="Как_увеличить_размер_VHD_файла_под_windows_10-_VirtualBox_5-0_такой_возможности_не_дает,_а_жаль!">Как увеличить размер VHD файла под windows 10. VirtualBox 5.0 такой возможности не дает, а жаль!</h1><p>Когда я решил создать виртуальную машину в VirtualBox (Oracle VM VirtualBox — программный продукт виртуализации) я решил использовать под диск формат VHD (Virtual Hard Disk)</p>
+<p>Почему? </p>
+<ul>
+<li>Во-первых VirtualBox у меня установлен на Windows 10, а изначально VHD формат был создан компанией Connectix и позднее куплен Microsoft вместе с программой виртуализации Virtual PC. C июня 2005 Microsoft сделала спецификацию формата VHD доступной третьим фирмам в рамках Microsoft Open Specification Promise.</li>
+<li>Во-вторых он поддерживается, на текущий момент, очень многими программными продуктами для виртуализации. Например, VMware Workstation, Windows Virtual PC.</li>
+</ul>
+<p>Но вот проблема. При создании диска я указал, что диск будет динамически-расширяемый, но максимальный размер установил в 100Gb. Естественно, данный объем у меня быстро закончился.</p>
+<h1 id="Проблема_(Issue):_Как_увеличить_размер_VHD_файла_под_windows_10-">Проблема (Issue): Как увеличить размер VHD файла под windows 10.</h1><p>VirtualBox 5.0 такой возможности не дает, а жаль! Интернет мне в помощь, но все что выдают мне поисковики это - утилита VHDResizer. Вопрос: Зачем мне засорять свою систему этим VHDResizer? Неужели windows 10 не справиться с этим!?</p>
+<h1 id="Решение_(Resolve)">Решение (Resolve)</h1><p>Использовать утилиту diskpart.exe входящую в Windows 10</p>
+<p>Command Prompt</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">cmd</span><span class="class">.exe</span></span><br><span class="line"><span class="tag">diskpart</span><span class="class">.exe</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> vdisk <span class="keyword">file</span>=<span class="string">"полный путь к файлу"</span></span><br><span class="line">expand vdisk maximum=<span class="string">"размер в мб</span></span><br></pre></td></tr></table></figure>
+<p>На самом деле есть целый список команд в утилите diskpart для работы с виртуальном диском VHD:</p>
+<ul>
+<li>Attach  vdisk </li>
+<li>Compact vdisk </li>
+<li>Create  vdisk </li>
+<li>Detail  vdisk </li>
+<li>Expand  vdisk </li>
+<li>Merge   vdisk </li>
+<li>Select  vdisk </li>
+</ul>
+<h1 id="Поэкспериментируем">Поэкспериментируем</h1><p>Запускаем из командной строки DiskPart:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Microsoft DiskPart version <span class="number">10.0</span><span class="number">.10240</span></span><br><span class="line"></span><br><span class="line">Copyright (C) <span class="number">1999</span>-<span class="number">2013</span> Microsoft Corporation.</span><br><span class="line">On computer: EPRUPET</span><br><span class="line"></span><br><span class="line">DISKPART&gt; <span class="built_in">list</span> vdisk</span><br><span class="line"></span><br><span class="line">There are no <span class="keyword">virtual</span> disks to show.</span><br></pre></td></tr></table></figure></p>
+<p>Перемещаем фокус на виртуальный диск:</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DISKPART&gt; select vdisk <span class="built_in">file</span>=<span class="string">"f:\VBDisks\W7\W7.vhd"</span></span><br><span class="line"></span><br><span class="line">DiskPart successfully selected <span class="operator">the</span> virtual disk <span class="built_in">file</span>.</span><br></pre></td></tr></table></figure>
+<p>Вводим команду лист:<br><figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">DISKPART</span>&gt; <span class="comment">list</span> <span class="comment">vdisk</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">VDisk</span> <span class="comment">###</span>  <span class="comment">Disk</span> <span class="comment">###</span>  <span class="comment">State</span>                 <span class="comment">Type</span>       <span class="comment">File</span></span><br><span class="line">  <span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span>  <span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span>  <span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span>  <span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span>  <span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span></span><br><span class="line"><span class="comment">*</span> <span class="comment">VDisk</span> <span class="comment">0</span>    <span class="comment">Disk</span> <span class="literal">-</span><span class="literal">-</span><span class="literal">-</span>  <span class="comment">Added</span>                 <span class="comment">Unknown</span>     <span class="comment">f:\VBDisks\W7\W7</span><span class="string">.</span><span class="comment">vhd</span></span><br></pre></td></tr></table></figure></p>
+<p>Смотрим детальную информацию:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">DISKPART&gt; detail vdisk</span><br><span class="line"></span><br><span class="line">Device type ID: <span class="number">0</span> (Unknown)</span><br><span class="line">Vendor ID: &#123;<span class="number">00000000</span>-<span class="number">0000</span>-<span class="number">0000</span>-<span class="number">0000</span>-<span class="number">000000000000</span>&#125; (Unknown)</span><br><span class="line">State: Added</span><br><span class="line">Virtual size:  <span class="number">102</span> GB</span><br><span class="line">Physical size:   <span class="number">28</span> GB</span><br><span class="line">Filename: f:\VBDisks\W7\W7.vhd</span><br><span class="line">Is Child: No</span><br><span class="line">Parent Filename:</span><br><span class="line">Associated disk<span class="preprocessor">#: Not found.</span></span><br><span class="line"></span><br><span class="line">DISKPART&gt;</span><br></pre></td></tr></table></figure>
 
       </div>
       <footer class="article-footer">
-        <a data-url="http://designest.ru/2015/10/07/insert-image-to-post/" data-id="cifpnipaz000gdgoqft3w8c7n" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+        <a data-url="http://designest.ru/2015/10/12/Увеличение-размера-VHD-файла-под-windows-7/" data-id="cifpnipaq0005dgoquj29g91h" class="article-share-link"><i class="fa fa-share"></i>Share</a>
         
         
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VirtualBox-VHD-Virtual-Hard-Disk/">VirtualBox, VHD, Virtual Hard Disk</a></li></ul>
+
       </footer>
     </div>
   </article>
@@ -145,20 +174,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/10/12/Увеличение-размера-VHD-файла-под-windows-7/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/10/12/Описание-служебной-программы-Diskpart-с-интерфейсом-командной-строки/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">newer</strong>
       <p class="article-nav-title">
         
-          Увеличение размера VHD файла под windows 10
+          Описание служебной программы Diskpart с интерфейсом командной строки
         
       </p>
       <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
   
   
-    <a href="/2014/10/09/VirtualBox-Error-VT-x-is-not-available/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/10/07/insert-image-to-post/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">older</strong>
-      <p class="article-nav-title">VirtualBox: Error -&gt; VT-x is not available</p>
+      <p class="article-nav-title">insert-image-to-post</p>
       <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
     </a>
   

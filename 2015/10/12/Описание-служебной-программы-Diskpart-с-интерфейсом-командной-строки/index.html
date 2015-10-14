@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Описание служебной программы Diskpart с интерфейсом командной строки | DESIGNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Информация взята с сайта https://support.microsoft.com/ru-ru/kb/
+АннотацияВ данной статье рассматривается служебная программа Diskpart, предназначенная для настройки параметров запоминающих устройств">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Описание служебной программы Diskpart с интерфейсом командной строки">
+<meta property="og:url" content="http://designest.ru/2015/10/12/Описание-служебной-программы-Diskpart-с-интерфейсом-командной-строки/index.html">
+<meta property="og:site_name" content="DESIGNest">
+<meta property="og:description" content="Информация взята с сайта https://support.microsoft.com/ru-ru/kb/
+АннотацияВ данной статье рассматривается служебная программа Diskpart, предназначенная для настройки параметров запоминающих устройств">
+<meta property="og:updated_time" content="2015-10-12T19:05:16.079Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Описание служебной программы Diskpart с интерфейсом командной строки">
+<meta name="twitter:description" content="Информация взята с сайта https://support.microsoft.com/ru-ru/kb/
+АннотацияВ данной статье рассматривается служебная программа Diskpart, предназначенная для настройки параметров запоминающих устройств">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  
+  
+    <link rel="stylesheet" href="/scrollLoading/style.css" type="text/css">
+  
+  
+
+
+  
+
+  
+    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div class="container">
+      <div class="container-inner">
+        <div id="header-title">
+          <h1 class="logo-wrap">
+            <a href="/" class="logo"></a>
+          </h1>
+          
+        </div>
+        <div id="header-inner" class="nav-container">
+          <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+          <div class="nav-container-inner">
+            <ul id="main-nav">
+              
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
+              
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Hexo/">Hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Issues/">Issues</a></li></ul>
+                  
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/about/index.html">About</a></li>
+              
+            </ul>
+            <nav id="sub-nav">
+              <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="http://designest.ru"></form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="container">
+      <div class="main-body container-inner">
+        <div class="main-body-inner">
+          <section id="main">
+            <div class="main-body-header">
+
+              <h1 class="header">uncategorized</h1>
+            </div>
+            <div class="main-body-content">
+              
+  <article id="post-Описание-служебной-программы-Diskpart-с-интерфейсом-командной-строки" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!--  -->
+      
+        <header class="article-header">
+          
+  
+    <h1 class="article-title" itemprop="name">
+      Описание служебной программы Diskpart с интерфейсом командной строки
+    </h1>
+  
+
+        </header>
+      
+      <p class="article-byline">
+        <a href="/2015/10/12/Описание-служебной-программы-Diskpart-с-интерфейсом-командной-строки/" class="article-date">
+  <time datetime="2015-10-12T18:44:17.000Z" itemprop="datePublished">2015-10-12</time>
+</a>
+      </p>
+      <div class="article-entry" itemprop="articleBody">
+        <p>Информация взята с сайта <a href="https://support.microsoft.com/ru-ru/kb/" target="_blank" rel="external">https://support.microsoft.com/ru-ru/kb/</a></p>
+<h1 id="Аннотация">Аннотация</h1><p>В данной статье рассматривается служебная программа Diskpart, предназначенная для настройки параметров запоминающих устройств с помощью сценария, удаленного сеанса или другой командной строки. Программа является расширением графического интерфейса компонента “Администратор дисков”.</p>
+<h1 id="Дополнительная_информация">Дополнительная информация</h1><p>Отличие программы Diskpart от многих других служебных программ с интерфейсом командной строки заключается в том, что она выполняется не в однострочном режиме, а считывает команды из стандартного ввода-вывода. Такие команды могут относиться к любому диску, разделу или тому.</p>
+<h1 id="Сравнение_с_оснасткой_“Управление_дисками”">Сравнение с оснасткой “Управление дисками”</h1><p>Программа Diskpart позволяет выполнять расширенный набор действий, поддерживаемых оснасткой “Управление дисками”. Оснастка “Управление дисками” защищает данные на диске путем блокирования действий, которые могут привести к их повреждению. Будьте внимательны, используя программу Diskpart, поскольку она предоставляет явный контроль над разделами и томами!</p>
+<p>Программа Diskpart позволяет преобразовать базовый диск в динамический. При этом базовый диск может быть пустым, содержать основные разделы или логические диски, являться диском с данными, системным или загрузочным диском, но не должен иметь в своем составе отказоустойчивых наборов (FtDisk), например чередующихся или зеркальных наборов. Для преобразования базовых дисков, которые содержат наборы FtDisk, следует использовать оснастку “Управление дисками” из состава Windows 2000 или преобразовать диск перед обновлением до Windows XP.</p>
+<p>С помощью программы Diskpart можно преобразовать динамический диск в базовый. До начала преобразования необходимо удалить все динамические тома. Кроме случаев крайней необходимости, удалять разделы на динамических дисках не рекомендуется. Перед преобразованием диска в базовый рекомендуется удалить на нем все тома. Удалите все динамические разделы с данными. Не используйте динамические разделы и основной базовый раздел на одном диске — в этом случае компьютер может не загрузиться. </p>
+<p>Программа Diskpart позволяет создавать на диске разделы со смещением. Оснастка “Управление дисками” всегда размещает раздел в конце любой занятой области или первой обнаруженной области достаточного размера. На дисках с основной загрузочной записью (MBR) смещение и размер раздела округляются для сохранения требуемой конфигурации цилиндров до ближайшего действительного значения (размер — с повышением). Программа Diskpart не присваивает букву диска созданному разделу. Назначить букву диска или точку подключения можно с помощью команды assign.</p>
+<p>Подобно оснастке “Управление дисками”, программа Diskpart создает динамические диски только на несъемных жестких дисках и не позволяет преобразовывать съемные диски (например, диски USB или 1394) в динамические.</p>
+<p>С помощью программы Diskpart можно выполнить некоторые операции по удалению разделов, которые блокируются оснасткой “Управление дисками” (например, удалить MBR-диск OEM). Однако такие разделы часто содержат файлы, необходимые для обеспечения работы платформы в целом. Программа Diskpart блокирует удаление текущих системных и загрузочных томов и разделов, томов и разделов, содержащих файл подкачки, а также разделов, которые лежат в основе динамических дисков.</p>
+<p>С помощью программы Diskpart невозможно создать раздел на съемном носителе. Операционные системы Windows поддерживают на съемных носителях не более одного раздела с MBR. Если носитель изготовлен с основной загрузочной записью, ее невозможно изменить, однако эта запись соблюдается, даже если настроено несколько разделов или логических дисков. В противном случае, если носитель изготовлен без основной загрузочной записи, он рассматривается в качестве диска в формате “superfloppy” и не содержит структуры разделов</p>
+<p>Буква сопоставляется не самому съемному носителю, а диску и может быть изменена с помощью программы Diskpart.</p>
+<p>Запуск программы Diskpart приводит к созданию подписей дисков, идентификаторов GUID для дисков с таблицей разделов GPT и для GPT-разделов, однако эти значения невозможно установить явно.</p>
+<p>Подобно оснастке “Управление дисками”, программа Diskpart поддерживает новую схему Itanium разбиения дисков на разделы под названием GPT. GPT-диски не могут быть использованы на компьютерах с архитектурой x86 под управлением Windows XP или Windows 2000. Программа Diskpart позволяет преобразовывать разбиение диска по схеме GPT в формат MBR только на пустых дисках.</p>
+<p>С помощью программы Diskpart можно удалять отсутствующие динамические диски. Динамические диски содержат в своем составе общую базу данных, и поэтому каждый динамический диск имеет сведения об остальных динамических дисках на конкретном компьютере. В случае перемещения динамического диска исходный компьютер считает его отсутствующим.</p>
+<p>Программа Diskpart не назначает буквы дисков для разделов и томов автоматически — это необходимо сделать вручную, указав букву самостоятельно или приняв следующую доступную букву.</p>
+<h1 id="Установка_фокуса">Установка фокуса</h1><p>Большинство команд Diskpart выполняются по отношению к определенному диску, разделу или тому. Такой целевой объект находится “в фокусе”. Установка фокуса упрощает выполнение стандартных задач настройки, предполагающих создание нескольких разделов на одном диске. Для помещения объекта в фокус служит команда select. Установка фокуса требуется для выполнения всех команд (за исключением list, help, rem, exit и help). </p>
+<p>Чтобы переместить фокус явно, используется команда select. Кроме того, с помощью некоторых команд, например create, это может быть сделано неявно. Перед выполнением действий с базовым диском необходимо переместить на него фокус. На базовом диске выбранный раздел и выбранный том — это одно и то же. Перемещение одного из фокусов автоматически приводит к перемещению фокуса другого объекта. На динамическом томе значение имеет только фокус тома, поскольку предыдущий фокус раздела всегда теряется, а фокус диска важен только для простых томов. </p>
+<p>Рассмотрим следующие примеры компьютера с двумя дисками.</p>
+<ul>
+<li>Каждый диск содержит два основных раздела: первый диск — разделы C и D, а второй — E и F. Перед тем как поместить в фокус раздел C или D, необходимо установить фокус на диск 1. Фокус тома всегда можно установить на раздел C, D, E или F. В данном примере установка фокуса тома на раздел C или D не приводит к изменению фокуса диска, но в случае установки фокуса тома на раздел E или F фокус будет смещен на другой диск.</li>
+<li>Каждый диск является динамическим и содержит простой том, а также свободное пространство определенного объема. На первом диске расположен раздел С, а на втором — раздел Е. Перед добавлением простого тома на первом диске необходимо установить фокус диска. Для расширения раздела С достаточно установить фокус тома. Аналогично, чтобы добавить зеркальный том к разделу Е, необходимо только установить на этот раздел фокус тома. В случае создания простого тома или расширения существующего тома в пределах того же диска менять фокус диска не нужно. Добавление зеркального тома, создание чередующегося набора или расширение существующего тома за пределы одного диска приводит к потере диском фокуса.</li>
+</ul>
+<h1 id="Сценарии">Сценарии</h1><p>Программа Diskpart поддерживает выполнение сценариев. Для запуска сценария служит команда diskpart /s script.txt. Сценарии Diskpart могут быть запущены в среде Windows XP, Windows 2000, в случае автоматической установки с помощью служб удаленной установки (RIS), а также в среде предварительной установки Windows для OEM.</p>
+<p>По умолчанию программа Diskpart прерывает обработку команд и возвращает код ошибки в случае возникновения проблемы с выполнением сценария. Чтобы изменить такое поведение (сценарий продолжает выполняться даже после появления ошибки), необходимо включить в команду параметр noerr. Это параметр позволяет с помощью одного сценария удалить все разделы на всех дисках с данными, независимо от общего числа дисков. Однако параметр noerr поддерживается не всеми командами. Кроме того, даже если используется параметр noerr, код ошибки возвращается в случае наличия ошибки в синтаксисе команды.</p>
+<p>Коды ошибок, возвращаемые программой Diskpart:</p>
+<ul>
+<li>0 — успешное завершение операции, сценарий выполнен без ошибок;</li>
+<li>1 — неустранимая ошибка, возможны серьезные неполадки;</li>
+<li>2 — в командной строке Diskpart указаны неверные аргументы;</li>
+<li>3 — программе DiskPart не удалось открыть указанный сценарий или выходной файл;</li>
+<li>4 — сбой в одной из служб, использованных программой DiskPart;</li>
+<li>5 — ошибка в синтаксисе команды, сценарий не выполнен, поскольку объект выбран неправильно или не может быть использован с данной командой.<br>После выполнения программы Diskpart отображается ее версия и текущее имя компьютера.</li>
+</ul>
+<h1 id="Обзор_команд">Обзор команд</h1><p>Перемещение фокуса на объект<br><figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span></span><br></pre></td></tr></table></figure></p>
+<p>Команда select служит для установки фокуса на определенный объект. Чтобы отобразить список типов фокусов, запустите команду select без параметров. Если не указать идентификатор, будет отображен текущий выбранный объект.<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">select</span> disk[=<span class="keyword">n</span>]</span></span><br></pre></td></tr></table></figure></p>
+<p>Команда select disk служит для помещения в фокус диска Windows NT с указанным номером. Если не указать номер диска, будет отображен текущий выбранный диск.<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">select</span> <span class="keyword">partition</span>[=<span class="keyword">n</span>/<span class="keyword">l</span>]</span></span><br></pre></td></tr></table></figure></p>
+<p>Команда select partition служит для установки фокуса на определенный раздел. Если не указать раздел, будет отображен текущий выбранный раздел.</p>
+<p>На базовом диске раздел можно указать по индексу, букве диска или точке подключения, а на динамическом диске — только по индексу.<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">select</span> volume[=<span class="keyword">n</span>/<span class="keyword">l</span>]</span></span><br></pre></td></tr></table></figure></p>
+<p>Команда select volume служит для перемещения фокуса на указанный том. Если том не указан, отображается текущий том в фокусе.</p>
+<p>Том можно указать по индексу, букве диска или пути к точке подключения. При выборе тома на базовом диске фокус перемещается на соответствующий раздел.</p>
+<h1 id="Отображение_конфигурации_дисков">Отображение конфигурации дисков</h1><p>Для получения общих сведений служит команда list, а чтобы отобразить более подробную информацию, установите фокус и воспользуйтесь командой detail.<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">detail</span> disk</span><br></pre></td></tr></table></figure></p>
+<p>Вывод подробной информации о диске в фокусе. Например:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Diskpart&gt; select disk <span class="number">3</span> </span><br><span class="line">  </span><br><span class="line">Выбран диск <span class="number">3.</span> </span><br><span class="line">  </span><br><span class="line">Diskpart&gt; detail disk </span><br><span class="line">  </span><br><span class="line">Maxtor <span class="number">90432</span>D2</span><br><span class="line">Код диска: F549D151</span><br><span class="line">Тип   : IDE</span><br><span class="line">Шина    : <span class="number">0</span></span><br><span class="line">Конечный : <span class="number">0</span></span><br><span class="line">LUN ID : <span class="number">0</span> </span><br><span class="line">  </span><br><span class="line">  Том <span class="preprocessor">###  Имя  Метка        ФС     Тип              Размер     Состояние     Сведения </span></span><br><span class="line">  ----------  ---  -----------  -----  ----------------  -------  ---------  -------- </span><br><span class="line">  Том <span class="number">0</span>     F   My RAID Set  NTFS   RAID-<span class="number">5</span>            <span class="number">4096</span> МБ  Исправен </span><br><span class="line">  Том <span class="number">1</span>     G   FATSTRIPE    FAT32  Чередующийся том  <span class="number">6144</span> МБ  Исправен </span><br><span class="line">  Том <span class="number">2</span>     H   My Mirror    NTFS   Зеркальный том    <span class="number">2048</span> МБ  Исправен</span><br><span class="line">  Том <span class="number">3</span>     I   My Span      NTFS   Составной том        <span class="number">9</span> ГБ  Исправен</span><br></pre></td></tr></table></figure></p>
+<p>detail partition</p>
+<p>Вывод подробной информации о разделе в фокусе:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Diskpart&gt; select disk <span class="number">0</span></span><br><span class="line"></span><br><span class="line">Выбран диск <span class="number">0.</span></span><br><span class="line"></span><br><span class="line">Diskpart&gt; select partition <span class="number">1</span></span><br><span class="line"></span><br><span class="line">Выбран раздел <span class="number">1.</span></span><br><span class="line"></span><br><span class="line">Diskpart&gt; detail partition</span><br><span class="line"></span><br><span class="line">Раздел <span class="number">0</span></span><br><span class="line">Тип: <span class="number">07</span></span><br><span class="line">Скрытый: Нет</span><br><span class="line">Активный: Да</span><br><span class="line"></span><br><span class="line">  Том <span class="preprocessor">###  Имя  Метка        ФС     Тип              Размер     Состояние     Сведения</span></span><br><span class="line">  ----------  ---  -----------  -----  ----------  -------  ---------  --------</span><br><span class="line">* Том <span class="number">2</span>    C                 NTFS   Раздел   <span class="number">4110</span> МБ  Исправен    Системный</span><br></pre></td></tr></table></figure></p>
+<p>detail volume</p>
+<p>Вывод подробной информации о томе в фокусе. Например:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Diskpart&gt; select volume <span class="number">1</span> </span><br><span class="line">  </span><br><span class="line">Выбран том <span class="number">1.</span> </span><br><span class="line">  </span><br><span class="line">Diskpart&gt; detail volume </span><br><span class="line">  </span><br><span class="line">  Диск <span class="preprocessor">###  Состояние      Размер     Свободно     Дин  Gpt </span></span><br><span class="line">  --------  ----------  -------  -------  ---  --- </span><br><span class="line">  Диск <span class="number">1</span>    Подключен         <span class="number">8</span> МБ      <span class="number">0</span> B   * </span><br><span class="line">  Диск <span class="number">2</span>    Подключен         <span class="number">8</span> МБ      <span class="number">0</span> B   * </span><br><span class="line">  Диск <span class="number">3</span>    Подключен         <span class="number">8</span> МБ      <span class="number">0</span> B   *</span><br></pre></td></tr></table></figure></p>
+<p>list disk</p>
+<p>Команда list disk служит для получения общих сведений о каждом установленном на компьютере диске. Диск, отмеченный звездочкой (*), находится в фокусе. Перечисляются только жесткие (например, стандарта IDE и SCSI) и съемные (например, стандарта 1394 и USB) диски. Съемные носители в списке не отображаются.<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Diskpart&gt; select disk <span class="number">3</span> </span><br><span class="line">  </span><br><span class="line">Выбран диск <span class="number">3.</span> </span><br><span class="line">  </span><br><span class="line">Diskpart&gt; <span class="built_in">list</span> disk </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  Диск <span class="preprocessor">###  Состояние      Размер     Свободно     Дин  Gpt </span></span><br><span class="line">  --------  ----------  -------  -------  ---  ---</span><br><span class="line">  Диск <span class="number">0</span>    Подключен      <span class="number">4118</span> МБ      <span class="number">0</span> B</span><br><span class="line">  Диск <span class="number">1</span>    Подключен         <span class="number">8</span> GB  <span class="number">4002</span> МБ   * </span><br><span class="line">  Диск <span class="number">2</span>    Подключен         <span class="number">8</span> МБ      <span class="number">0</span> B   * </span><br><span class="line">* Диск <span class="number">3</span>    Подключен         <span class="number">8</span> МБ      <span class="number">0</span> B   * </span><br><span class="line">  Диск М<span class="number">0</span>   Отсутствует       <span class="number">8</span> МБ      <span class="number">0</span> B   *</span><br></pre></td></tr></table></figure></p>
+<p>list partition</p>
+<p>Команда list partition служит для получения сведений о каждом разделе на выбранном диске. Например:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Diskpart&gt; select disk <span class="number">4</span> </span><br><span class="line">  </span><br><span class="line">Выбран диск <span class="number">4.</span> </span><br><span class="line">  </span><br><span class="line">Diskpart&gt; <span class="built_in">list</span> partition </span><br><span class="line">  </span><br><span class="line">  Раздел <span class="preprocessor">###  Тип              Размер     Смещение </span></span><br><span class="line">  -------------  ----------------  -------  ------- </span><br><span class="line">  Раздел <span class="number">1</span>    Основной           <span class="number">4094</span> МБ    <span class="number">31</span> КБ </span><br><span class="line">  Раздел <span class="number">2</span>    Расширенный        <span class="number">4581</span> МБ  <span class="number">4094</span> МБ </span><br><span class="line">  Раздел <span class="number">3</span>    Логический         <span class="number">2047</span> МБ  <span class="number">4094</span> МБ </span><br><span class="line">  Раздел <span class="number">4</span>    Логический         <span class="number">2533</span> МБ  <span class="number">6142</span> МБ</span><br><span class="line"> </span><br><span class="line">Отображаются все разделы, независимо от типа.</span><br></pre></td></tr></table></figure></p>
+<p>list volume</p>
+<p>Команда list volume служит для получения сведений о каждом томе на компьютере. Например:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Diskpart&gt; <span class="built_in">list</span> volume </span><br><span class="line">  </span><br><span class="line">  Том <span class="preprocessor">###  Имя  Метка        ФС     Тип              Размер     Состояние     Сведения </span></span><br><span class="line">  ----------  ---  -----------  -----  ----------------  -------  ----------  --------</span><br><span class="line">  Том <span class="number">0</span>     F   My RAID Set  NTFS   RAID-<span class="number">5</span>            <span class="number">4096</span> МБ  Исправен</span><br><span class="line">  Том <span class="number">1</span>     G   FATSTRIPE    FAT32  Чередующийся том  <span class="number">6144</span> МБ  Неисправен</span><br><span class="line">  Том <span class="number">2</span>     H   My Mirror    NTFS   Зеркальный том    <span class="number">2048</span> МБ  Исправен</span><br><span class="line">  Том <span class="number">3</span>     I   My Span      NTFS   Составной том        <span class="number">9</span> ГБ  Исправен</span><br><span class="line">  Том <span class="number">4</span>     D                CDFS   CD-ROM                <span class="number">0</span> Б</span><br><span class="line">  Том <span class="number">5</span>     C                NTFS   Раздел            <span class="number">2047</span> МБ  Исправен    Системный</span><br><span class="line">  Том <span class="number">6</span>     Е                NTFS   Раздел            <span class="number">2063</span> МБ  Исправен    Загрузочный</span><br><span class="line">  Том <span class="number">7</span>     J   My Primary   NTFS   Раздел            <span class="number">4095</span> МБ  Исправен</span><br><span class="line">  Том <span class="number">8</span>     K   My Logical   NTFS   Раздел            <span class="number">2047</span> МБ  Исправен</span><br><span class="line">  Том <span class="number">9</span>     L   My Next Log  NTFS   Раздел            <span class="number">2534</span> МБ  Исправен</span><br></pre></td></tr></table></figure>
+<h1 id="Управление_базовыми_дисками">Управление базовыми дисками</h1><p>В этом разделе рассмотрены команды, которые используются для создания и удаления разделов, а также назначения букв дисков и точек подключения. Эти команды могут быть выполнены только по отношению к базовым дискам. Команды, которые используются с динамическими дисками, а также для преобразования базовых дисков в динамические, описаны в следующих разделах.</p>
+<p>На MBR-дисках параметры size и offset округляются в соответствии с конфигурацией цилиндров. На GPT-дисках параметры size и offset округляются в соответствии с конфигурацией секторов. Если параметр offset не указан, раздел размещается в первой непрерывной незанятой области, имеющей достаточный размер. Если параметр size не указан, раздел может занять все пространство на выбранном диске.</p>
+<p>При первом обнаружении новые диски считаются MBR-дисками. Перед созданием раздела GPT диск необходимо явно преобразовать в формат GPT. MSR-раздел рекомендуется создавать первым на диске с данными и вторым (после ESP) на системном или загрузочном диске. После преобразования MBR-диска в формат GPT MSR-раздел создается автоматически. </p>
+<p>Фокус всегда перемещается на созданный раздел. Удаление любого раздела приводит к потере фокуса. Фокус диска в любом случае не меняется.</p>
+<p>active </p>
+<p>Пометка имеющего фокус раздела на базовом диске как активного. Эта информация указывает встроенному ПО, что раздел является действительным системным разделом. Программа DiskPart не проверяет содержимое раздела. </p>
+<p>Примечание. В результате неправильного использования этой команды компьютер может не загрузиться. </p>
+<p>assign [[letter=l]/[mount=путь]] [noerr]</p>
+<p>Назначение буквы диска или точки подключения разделу в фокусе. Если буква диска не указана, используется следующая доступная буква. Если буква диска или точка подключения уже используются и не указан параметр noerr, возникает ошибка.</p>
+<p>Команда может быть использована для изменения буквы, назначенной съемному носителю. </p>
+<p>Нельзя назначить букву диска системному тому, загрузочному тому или тому, который содержит файл подкачки. Кроме того, буква диска не может быть назначена OEM-разделу или GPT-разделу, отличному от раздела Msdata.</p>
+<p>create partition primary [size=n] [offset=n] [id=байт/guid] [noerr]</p>
+<p>Создание на текущем диске основного раздела указанного размера и с указанным смещением начального адреса.</p>
+<p>Если байт ИД раздела на MBR-диске не задан, команда создает раздел типа 0x6. Параметр ID служит для указания типа раздела. Проверка допустимости байта типа раздела или другие проверки параметра ID не производятся.</p>
+<p>Если идентификатор GUID типа раздела на GPT-диске не задан, команда создает раздел MSDATA. С помощью параметра ID может быть задан любой идентификатор GUID. Команда DiskPart не выполняет проверку на допустимость, уникальность (или иную проверку) идентификатора GUID. Идентификатор GUID экземпляра раздела создается автоматически.</p>
+<p>Операционная система Windows не назначает буквы дисков созданным разделам MBR и GPT автоматически. Это необходимо сделать самостоятельно.</p>
+<p>create partition extended [size=n] [offset=n] [noerr]</p>
+<p>Создание на текущем диске дополнительного раздела указанного размера и с указанным смещением начального адреса. Диск должен иметь формат MBR.</p>
+<p>После создания раздела фокус автоматически перемещается на этот раздел. На диске можно создать только один дополнительный раздел. Логические диски могут быть созданы только после дополнительного раздела.</p>
+<p>create partition logical [size=n] [offset=n] [noerr]</p>
+<p>Создание в существующем дополнительном разделе на текущем диске логического диска указанного размера и с указанным смещением начального адреса. Диск должен иметь формат MBR. </p>
+<p>Если смещение не указано, логический диск размещается в первой непрерывной незанятой области дополнительного диска, имеющей достаточный размер. Если размер не указан, раздел занимает все свободное пространство дополнительного раздела.</p>
+<p>После создания раздела фокус автоматически перемещается на новый логический диск.</p>
+<p>create partition msr [size=n] [offset=n] [noerr]</p>
+<p>Выполнение команды create partition msr равнозначно созданию раздела с идентификатором MSR GUID E3C9E316-0B5C-4DB8-817D-F92DF00215AE.</p>
+<p>create partition esp [size=n] [offset=n] [noerr]</p>
+<p>Выполнение команды create partition esp равнозначно созданию раздела с идентификатором ESP GUID C12A7328-F81F-11D2-BA4B-00A0C93EC93B.</p>
+<p>delete partition [noerr] [override]</p>
+<p>Команда delete partition служит для удаления раздела в фокусе.</p>
+<p>Нельзя удалить системный раздел, загрузочный раздел, а также раздел, содержащий файл подкачки. Чтобы удалить раздел ESP, MSR или известный раздел OEM, необходимо указать параметр override.</p>
+<p>extend [size=n] [noerr] </p>
+<p>Расширение тома в фокусе на смежное невыделенное пространство. Невыделенная область должна находиться на том же диске и следовать (иметь более высокое смещение) за разделом в фокусе. С помощью этой команды существующий базовый раздел данных может быть расширен за счет созданного пространства массива RAID.</p>
+<p>Если раздел был ранее отформатирован с использованием файловой системы NTFS, файловая система автоматически расширяется на увеличенный раздел без потери существующих данных. Если раздел был ранее отформатирован с использованием другой файловой системы (отличной от NTFS), выполнение команды завершается неудачно (и без изменения раздела).</p>
+<p>Невозможно расширить текущий системный или загрузочный разделы.</p>
+<p>remove [[letter=l]/[mount=путь]/[all]] [noerr]</p>
+<p>Удаление буквы диска или точки подключения для раздела в фокусе. Если используется параметр all, удаляются все текущие буквы дисков и точки подключения. Если буква диска или точка подключения не указаны, удаляется следующая доступная буква.</p>
+<p>Команда может быть использована для изменения буквы, назначенной съемному носителю.</p>
+<p>Не допускается удаление буквы диска для системного и загрузочного тома, а также для тома, содержащего файл подкачки. Кроме того, не допускается удаление букв диска OEM-разделов, любых GPT-разделов с нераспознанным идентификатором GUID, а также специальных не содержащих данных GPT-разделов, например разделов ESP.</p>
+<h1 id="Управление_динамическими_дисками">Управление динамическими дисками</h1><p>Рассмотренные в этом разделе команды используются для создания и удаления томов, восстановления отказоустойчивых томов, а также для импорта дисков.</p>
+<p>Значение параметра size округляется в МБ. Указать смещение нельзя. Том всегда размещается в первой непрерывной незанятой области диска, имеющей достаточный размер. Если размер не указан, создается том максимально возможного размера.</p>
+<p>Фокус перемещается на созданный том. Если том располагается на нескольких дисках, текущий фокус диска теряется. Удаление тома приводит к потере фокуса тома. Если фокус диска был установлен перед удалением тома, он сохраняется.</p>
+<p>Примечание. Программа Diskpart создает MSR-раздел на каждом пустом диске, который преобразуется в динамический диск или в формат GPT.</p>
+<p>active </p>
+<p>Пометка имеющего фокус тома как активного. Эта информация указывает встроенному ПО, что раздел является действительным системным разделом. Программа DiskPart проверяет раздел только на допустимость нахождения на нем загрузочного образа операционной системы и не проверяет содержимое раздела. В результате неправильного использования этой команды компьютер может не загрузиться.</p>
+<p>add disk=n [noerr]</p>
+<p>Команда add служит для добавления на указанный диск зеркальной копии тома в фокусе. Поддерживается только две зеркальных копии. Выбранный том должен быть простым томом.</p>
+<p>assign [[letter=l]/[mount=путь]] [noerr]</p>
+<p>Назначение буквы диска или точки подключения тому в фокусе. Если буква диска не указана, используется следующая доступная буква. Если буква диска или точка подключения уже используются и не указан параметр noerr, возникает ошибка.</p>
+<p>Нельзя назначить букву диска системному тому, загрузочному тому или тому, который содержит файл подкачки.</p>
+<p>break disk=n [nokeep] [noerr]</p>
+<p>Разбивает зеркальный том в фокусе.</p>
+<p>По умолчанию содержимое обеих половин зеркала сохраняется. Каждая половина становится простым томом. Если задан параметр nokeep, сохраняется только указанная половина зеркала, а другая удаляется и преобразуется в свободное пространство.</p>
+<p>Исходный том сохраняет все буквы диска или точки подключения. Если половина зеркала не сохраняется, фокус остается на оставшемся простом томе на указанном диске. В противном случае фокус перемещается на указанную половину зеркала. Половина зеркала становится простым томом без назначения буквы диска.</p>
+<p>create volume simple [size=n] [disk=n] [noerr]</p>
+<p>Команда create volume simple служит для создания простого тома указанного размера на определенном диске.</p>
+<p>Если размер не задан, новый том занимает все свободное место на диске. Если диск не задан, используется диск в фокусе.</p>
+<p>После создания тома фокус автоматически перемещается на этот том.</p>
+<p>create volume stripe [size=n] disk=n[,n[,…]] [noerr]</p>
+<p>Команда create volume stripe служит для создания чередующегося тома на указанных дисках. Общий размер чередующегося тома равен указанному размеру, помноженному на число дисков.</p>
+<p>Если размер не задан, создается чередующийся том максимально возможного размера. Определяется диск с наименьшим доступным непрерывным свободным пространством, в соответствии с размером которого и создается чередующийся том. Пространство такого же размера выделяется на каждом последующем диске.</p>
+<p>create volume raid [size=n] disk=n[,n[,…]] [noerr]</p>
+<p>Команда create volume raid служит для создания тома RAID-5 на указанных дисках. На каждом диске выделяется пространство указанного в параметре size размера.</p>
+<p>Если размер не указан, создается том RAID-5 максимального возможного размера. Определяется диск с наименьшим доступным непрерывным свободным пространством, в соответствии с размером которого и создается том RAID-5. Пространство того же размера выделяется на каждом диске. Фактический объем доступного дискового пространства на томе RAID-5 меньше суммы занятого дискового пространства, поскольку некоторая его часть требуется для четности.</p>
+<p>delete disk [noerr] [override]</p>
+<p>Команда delete disk служит для удаления отсутствующего динамического диска из списка дисков.</p>
+<p>Если параметр override не задан, удаляются все простые тома и половины зеркальных томов на диске. Если часть диска входит в том RAID-5, команда не выполняется.</p>
+<p>delete partition [noerr] [override]</p>
+<p>Команда delete partition служит для удаления раздела в фокусе.</p>
+<p>Невозможно удалить разделы, которые содержат существующие подключенные динамические тома. Необходимо предварительно удалить такие тома и преобразовать диск в базовый. Чтобы удалить раздел ESP, MSR или известный раздел OEM, необходимо указать параметр override.</p>
+<p>Разделы динамических дисков можно только удалять, но не создавать. Например, можно удалить нераспознанный GPT-раздел на динамическом GPT-диске. Доступ к освобожденному после удаления пространству отсутствует. Данная команда позволяет восстановить пространство поврежденного автономного динамического диска в аварийной ситуации, когда нельзя воспользоваться командой clean.</p>
+<p>delete volume [noerr]</p>
+<p>Команда delete volume служит для удаления тома в фокусе. Выполнение команды приводит к потере всех данных.</p>
+<p>extend disk=n [size=n] [noerr]</p>
+<p>Команда extend служит для расширения текущего простого или расширенного тома на указанный диск. Команда предназначена для использования только с томами с файловой системой NTFS.</p>
+<p>Если размер не указан, том может занять все свободное пространство на указанном диске. Существующий фокус диска теряется.</p>
+<p>import [noerr]</p>
+<p>Команда import служит для импорта всех дисков из внешней группы.</p>
+<p>Импортируется каждый диск, находящийся в одной группе с диском, имеющим фокус. После выполнения команды текущий фокус диска или тома теряется.</p>
+<p>online [noerr]</p>
+<p>Подключение отключенного ранее диска или тома. Выполнение команды не приводит к перемещению фокуса.</p>
+<p>remove [[letter=l]/[mount=путь]/[all]] [noerr]</p>
+<p>Удаление буквы диска или точки подключения тома в фокусе. Если используется параметр all, удаляются все текущие буквы дисков и точки подключения. Если буква диска или точка подключения не указаны, удаляется следующий доступный путь.</p>
+<p>Не допускается удаление буквы диска для системного и загрузочного тома, а также для тома, содержащего файл подкачки.</p>
+<p>retain</p>
+<p>Подготовка существующего динамического простого тома к использованию в качестве загрузочного или системного тома.</p>
+<p>В компьютерах на базе процессоров x86 — создание MBR-раздела на динамическом простом томе, имеющем фокус. Для создания MBR-раздела динамический простой том должен начинаться со смещения, выровненного по цилиндру, а его размер должен быть кратен размеру цилиндра.</p>
+<p>В компьютерах на базе процессоров Itanium выполнение команды retain приводит к созданию GPT-раздела на динамическом простом томе, имеющем фокус.</p>
+<h1 id="Преобразование_дисков">Преобразование дисков</h1><p>onvert mbr [noerr]</p>
+<p>Команда convert mbr служит для преобразования стиля разделов текущего диска в формат MBR. Диск может быть базовым или динамическим, но не должен содержать разделов или томов с данными.</p>
+<p>convert gpt [noerr]</p>
+<p>Команда convert gpt служит для преобразования стиля разделов текущего диска в формат GPT. Диск может быть базовым или динамическим, но не должен содержать разделов или томов с данными. Команда предназначена для выполнения на компьютерах с процессором Itanium. Запуск команды на компьютере с архитектурой х86 может завершиться неудачно.</p>
+<p>convert dynamic [noerr]</p>
+<p>Преобразование базового диска в динамический. Диск может содержать разделы с данными.</p>
+<p>convert basic [noerr]</p>
+<p>Преобразование пустого динамического диска в базовый.</p>
+<h1 id="Прочие_команды">Прочие команды</h1><p>exit</p>
+<p>Команда exit служит для завершения программы Diskpart и передачи управления операционной системе.</p>
+<p>clean [all]</p>
+<p>Удаление всех разделов или томов на диске, имеющем фокус, путем обнуления секторов. По умолчанию переопределяются только сведения о разделах MBR и GPT, а также данные в скрытых секторах на MBR-дисках. Задание параметра all приводит к обнулению всех секторов, в результате чего удаляются все содержащиеся на диске данные.</p>
+<p>rem […]</p>
+<p>Команда rem не выполняет каких-либо действий, а служит для вставки комментариев в сценарии.</p>
+<p>rescan</p>
+<p>Проверка всех шин ввода-вывода и поиск новых дисков, добавленных в компьютер.</p>
+<h1 id="Справка">Справка</h1><p>help</p>
+<p>Для отображения списка доступных команд служит команда help.</p>
+<p>Для получения дополнительных сведений о программе Diskpart откройте Центр справки и поддержки Windows XP и выполните поиск по термину Diskpart.</p>
+
+      </div>
+      <footer class="article-footer">
+        <a data-url="http://designest.ru/2015/10/12/Описание-служебной-программы-Diskpart-с-интерфейсом-командной-строки/" data-id="cifpnipav000adgoqhnfi8bpn" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+        
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Diskpart/">Diskpart</a></li></ul>
+
+      </footer>
+    </div>
+  </article>
+  
+  
+
+            </div>
+          </section>
+          <aside id="sidebar">
+  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+  <div class="sidebar-top">
+    <p>follow:</p>
+    <ul class="social-links">
+      
+        <li><a class="social-tooltip" title="twitter" href="/" target="_blank"><i class="icon fa fa-twitter"></i></a></li>
+      
+        <li><a class="social-tooltip" title="facebook" href="/" target="_blank"><i class="icon fa fa-facebook"></i></a></li>
+      
+        <li><a class="social-tooltip" title="google-plus" href="/" target="_blank"><i class="icon fa fa-google-plus"></i></a></li>
+      
+        <li><a class="social-tooltip" title="github" href="https://github.com/DmitrySigaev" target="_blank"><i class="icon fa fa-github"></i></a></li>
+      
+        <li><a class="social-tooltip" title="weibo" href="/" target="_blank"><i class="icon fa fa-weibo"></i></a></li>
+      
+        <li><a class="social-tooltip" title="rss" href="/" target="_blank"><i class="icon fa fa-rss"></i></a></li>
+      
+    </ul>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/10/13/Screen-Resolution-Problem-with-Ubuntu-14-04-and-VirtualBox/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <p class="article-nav-title">
+        
+          Screen Resolution Problem with Ubuntu 14.04 and VirtualBox
+        
+      </p>
+      <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+  
+  
+    <a href="/2015/10/12/Увеличение-размера-VHD-файла-под-windows-7/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <p class="article-nav-title">Увеличение размера VHD файла под windows 10</p>
+      <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+    </a>
+  
+</nav>
+
+  
+  <div class="widgets-container">
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">recents</h3>
+    <div class="widget">
+      <ul id="recent-post" class="">
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/10/13/Screen-Resolution-Problem-with-Ubuntu-14-04-and-VirtualBox/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Issues/">Issues</a></p>
+              <p class="item-title"><a href="/2015/10/13/Screen-Resolution-Problem-with-Ubuntu-14-04-and-VirtualBox/" class="title">Screen Resolution Problem with Ubuntu 14.04 and VirtualBox</a></p>
+              <p class="item-date"><time datetime="2015-10-13T17:09:51.000Z" itemprop="datePublished">2015-10-13</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/10/12/Описание-служебной-программы-Diskpart-с-интерфейсом-командной-строки/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/10/12/Описание-служебной-программы-Diskpart-с-интерфейсом-командной-строки/" class="title">Описание служебной программы Diskpart с интерфейсом командной строки</a></p>
+              <p class="item-date"><time datetime="2015-10-12T18:44:17.000Z" itemprop="datePublished">2015-10-12</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/10/12/Увеличение-размера-VHD-файла-под-windows-7/" class="thumbnail">
+  
+    <span style="background-image:url(/images/pinch_expand.jpg
+)" alt="Увеличение размера VHD файла под windows 10" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Issues/">Issues</a></p>
+              <p class="item-title"><a href="/2015/10/12/Увеличение-размера-VHD-файла-под-windows-7/" class="title">Увеличение размера VHD файла под windows 10</a></p>
+              <p class="item-date"><time datetime="2015-10-12T17:34:25.000Z" itemprop="datePublished">2015-10-12</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2015/10/07/insert-image-to-post/" class="thumbnail">
+  
+    <span style="background-image:url(/images/svg_text.svg
+)" alt="insert-image-to-post" class="thumbnail-image"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"></p>
+              <p class="item-title"><a href="/2015/10/07/insert-image-to-post/" class="title">insert-image-to-post</a></p>
+              <p class="item-date"><time datetime="2015-10-07T15:30:51.000Z" itemprop="datePublished">2015-10-07</time></p>
+            </div>
+          </li>
+        
+          <li>
+            
+            <div class="item-thumbnail">
+              
+<a href="/2014/10/09/VirtualBox-Error-VT-x-is-not-available/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+</a>
+
+            </div>
+            
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/Issues/">Issues</a></p>
+              <p class="item-title"><a href="/2014/10/09/VirtualBox-Error-VT-x-is-not-available/" class="title">VirtualBox: Error -&gt; VT-x is not available</a></p>
+              <p class="item-date"><time datetime="2014-10-09T13:43:43.000Z" itemprop="datePublished">2014-10-09</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Issues/">Issues</a><span class="category-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">October 2013</a><span class="archive-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-tocheck/">C++, tocheck</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Diskpart/">Diskpart</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo-js-Node-js/">Hexo.js, Node.js</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js-JavaScript/">Node.js, JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js-Visual-Studio/">Node.js, Visual Studio</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VirtualBox/">VirtualBox</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VirtualBox-VHD-Virtual-Hard-Disk/">VirtualBox, VHD, Virtual Hard Disk</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-float">
+    <h3 class="widget-title">tag cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C-tocheck/" style="font-size: 10px;">C++, tocheck</a> <a href="/tags/Diskpart/" style="font-size: 10px;">Diskpart</a> <a href="/tags/Hexo-js-Node-js/" style="font-size: 20px;">Hexo.js, Node.js</a> <a href="/tags/Node-js-JavaScript/" style="font-size: 10px;">Node.js, JavaScript</a> <a href="/tags/Node-js-Visual-Studio/" style="font-size: 10px;">Node.js, Visual Studio</a> <a href="/tags/VirtualBox/" style="font-size: 15px;">VirtualBox</a> <a href="/tags/VirtualBox-VHD-Virtual-Hard-Disk/" style="font-size: 10px;">VirtualBox, VHD, Virtual Hard Disk</a>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://designest.ru">Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+    
+  </div>
+</aside>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+  
+  <div class="container">
+    <div class="container-inner">
+      <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+      <div class="credit">
+        <h1 class="logo-wrap">
+          <a href="/" class="logo"></a>
+        </h1>
+        <p>&copy; 2015 Dmitry Sigaev</p>
+        <p>Powered by <a href="//designest.ru/" target="_blank">DESIGNest</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+
+
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+  <script src="/scrollLoading/jquery.scrollLoading.js" type="text/javascript"></script>
+  <script src="/scrollLoading/main.js" type="text/javascript"></script>
+
+
+<script src="/js/html-patch.js" type="text/javascript"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

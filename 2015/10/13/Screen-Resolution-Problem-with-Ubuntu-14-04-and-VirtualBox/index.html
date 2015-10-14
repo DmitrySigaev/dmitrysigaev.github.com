@@ -3,19 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>insert-image-to-post | DESIGNest</title>
+  <title>Screen Resolution Problem with Ubuntu 14.04 and VirtualBox | DESIGNest</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I have decided to test SVG picture:">
+  <meta name="description" content="I have VirtualBox 5.0.6 installed on Windows 10 host.And I have decided to create new VM, in other words, I have installed Ubuntu 14.04 64-bit as guest operating systems by using VM Virtual Box. 
+Issu">
 <meta property="og:type" content="article">
-<meta property="og:title" content="insert-image-to-post">
-<meta property="og:url" content="http://designest.ru/2015/10/07/insert-image-to-post/index.html">
+<meta property="og:title" content="Screen Resolution Problem with Ubuntu 14.04 and VirtualBox">
+<meta property="og:url" content="http://designest.ru/2015/10/13/Screen-Resolution-Problem-with-Ubuntu-14-04-and-VirtualBox/index.html">
 <meta property="og:site_name" content="DESIGNest">
-<meta property="og:description" content="I have decided to test SVG picture:">
-<meta property="og:image" content="http://designest.ru/images/svg_text.svg">
-<meta property="og:updated_time" content="2015-10-07T19:27:57.773Z">
+<meta property="og:description" content="I have VirtualBox 5.0.6 installed on Windows 10 host.And I have decided to create new VM, in other words, I have installed Ubuntu 14.04 64-bit as guest operating systems by using VM Virtual Box. 
+Issu">
+<meta property="og:updated_time" content="2015-10-13T17:37:10.938Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="insert-image-to-post">
-<meta name="twitter:description" content="I have decided to test SVG picture:">
+<meta name="twitter:title" content="Screen Resolution Problem with Ubuntu 14.04 and VirtualBox">
+<meta name="twitter:description" content="I have VirtualBox 5.0.6 installed on Windows 10 host.And I have decided to create new VM, in other words, I have installed Ubuntu 14.04 64-bit as guest operating systems by using VM Virtual Box. 
+Issu">
   
   
     <link rel="icon" href="/favicon.png">
@@ -81,11 +83,11 @@
           <section id="main">
             <div class="main-body-header">
 
-              <h1 class="header">uncategorized</h1>
+              <h1 class="header"><a class="page-title-link" href="/categories/Issues/">Issues</a></h1>
             </div>
             <div class="main-body-content">
               
-  <article id="post-insert-image-to-post" class="article article-single article-type-post" itemscope itemprop="blogPost">
+  <article id="post-Screen-Resolution-Problem-with-Ubuntu-14-04-and-VirtualBox" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
       <!--  -->
       
@@ -93,26 +95,31 @@
           
   
     <h1 class="article-title" itemprop="name">
-      insert-image-to-post
+      Screen Resolution Problem with Ubuntu 14.04 and VirtualBox
     </h1>
   
 
         </header>
       
       <p class="article-byline">
-        <a href="/2015/10/07/insert-image-to-post/" class="article-date">
-  <time datetime="2015-10-07T15:30:51.000Z" itemprop="datePublished">2015-10-07</time>
+        <a href="/2015/10/13/Screen-Resolution-Problem-with-Ubuntu-14-04-and-VirtualBox/" class="article-date">
+  <time datetime="2015-10-13T17:09:51.000Z" itemprop="datePublished">2015-10-13</time>
 </a>
       </p>
       <div class="article-entry" itemprop="articleBody">
-        <p>I have decided to test SVG picture:</p>
-<p><img src="/images/svg_text.svg" alt="SVG text "></p>
+        <p>I have VirtualBox 5.0.6 installed on Windows 10 host.<br>And I have decided to create new VM, in other words, I have installed Ubuntu 14.04 64-bit as guest operating systems by using VM Virtual Box. </p>
+<h1 id="Issue">Issue</h1><p>I have found that I can’t change Screen Resolution on my new VM.</p>
+<h1 id="Resolving">Resolving</h1><p>On VirtualBox you have to install “Guest Additions”. There is no need to set a resolution via Ubuntu settings. From your guest window of VirtualBox select<br><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">Devices</span> -&gt; Insert Guest <span class="keyword">Additions </span>CD image</span><br></pre></td></tr></table></figure></p>
+<p>In Ubuntu open a terminal, navigate to cd folder (usually /media/some-user/VBOXADDITIONS*) and run<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="keyword">sh</span> ./VBoxLinuxAdditions.<span class="keyword">run</span></span><br></pre></td></tr></table></figure></p>
+<p>Then shutdown you VM and restart VirtualBox.</p>
 
       </div>
       <footer class="article-footer">
-        <a data-url="http://designest.ru/2015/10/07/insert-image-to-post/" data-id="cifpnipaz000gdgoqft3w8c7n" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+        <a data-url="http://designest.ru/2015/10/13/Screen-Resolution-Problem-with-Ubuntu-14-04-and-VirtualBox/" data-id="cifpnipbb000rdgoqsccg7834" class="article-share-link"><i class="fa fa-share"></i>Share</a>
         
         
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VirtualBox/">VirtualBox</a></li></ul>
+
       </footer>
     </div>
   </article>
@@ -145,20 +152,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/10/12/Увеличение-размера-VHD-файла-под-windows-7/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">newer</strong>
-      <p class="article-nav-title">
-        
-          Увеличение размера VHD файла под windows 10
-        
-      </p>
-      <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
   
-  
-    <a href="/2014/10/09/VirtualBox-Error-VT-x-is-not-available/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/10/12/Описание-служебной-программы-Diskpart-с-интерфейсом-командной-строки/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">older</strong>
-      <p class="article-nav-title">VirtualBox: Error -&gt; VT-x is not available</p>
+      <p class="article-nav-title">Описание служебной программы Diskpart с интерфейсом командной строки</p>
       <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
     </a>
   
