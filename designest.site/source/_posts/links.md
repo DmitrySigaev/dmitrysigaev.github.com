@@ -33,3 +33,4 @@ tags: C++, tocheck
 26.[Presentations that I've given. See!!!](https://github.com/73rhodes/talks)
 27.[slides.com/](http://slides.com/)
 28.[Some Game by using Node. student](https://github.com/amikstrike/wn/blob/master/server.js)
+29.[Imago](http://habrahabr.ru/post/172651/)
