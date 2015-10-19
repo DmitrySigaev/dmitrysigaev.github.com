@@ -3,6 +3,7 @@ date: 2014-10-19 14:04:42
 tags: JavaScripts
 ---
 
+
 Let's take a look at an example:
 ```
 function A() {
@@ -37,3 +38,15 @@ a.x = 1;
 b.x = 2;
 
 ```
+
+Let's go:
+
+As you can find JavaScript program source text is free-format, using the
+semicolon as a statemant terminator and curly braces of grouping blocks of 
+statements. But...
+
+var C = function () {};
+
+
+
+
