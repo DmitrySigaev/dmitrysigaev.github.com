@@ -34,3 +34,4 @@ tags: C++, tocheck
 27.[slides.com/](http://slides.com/)
 28.[Some Game by using Node. student](https://github.com/amikstrike/wn/blob/master/server.js)
 29.[Imago](http://habrahabr.ru/post/172651/)
+30.[Indigo API](http://lifescience.opensource.epam.com/indigo/api/index.html#molecules)
