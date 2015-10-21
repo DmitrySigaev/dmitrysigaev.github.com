@@ -35,3 +35,5 @@ tags: C++, tocheck
 28.[Some Game by using Node. student](https://github.com/amikstrike/wn/blob/master/server.js)
 29.[Imago](http://habrahabr.ru/post/172651/)
 30.[Indigo API](http://lifescience.opensource.epam.com/indigo/api/index.html#molecules)
+31.[C++11:Defaulted and Deleted Functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2326.html)
+32.[C++ 11 FAQ от Бьярна Страуструпа](http://sergeyteplyakov.blogspot.ru/2012/05/c-11-faq.html)
