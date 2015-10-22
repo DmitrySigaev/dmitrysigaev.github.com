@@ -15,3 +15,4 @@ v0.10.25
 apt show nodejs
 sudo apt-get install gcc-5.1 g++-5.1
 node --debug-brk index.js
+sudo  npm install -g node-inspector
