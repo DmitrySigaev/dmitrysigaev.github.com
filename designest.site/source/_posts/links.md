@@ -43,3 +43,5 @@ tags: C++, tocheck
 36.[Emscripten:C++2JS compiler](http://kripken.github.io/emscripten-site/)
 37.[GitHub: CubicVR 3D Engine, C++ version http://www.cubicvr.org/](https://github.com/cjcliffe/CubicVR)
 38.[GitHub: CubicVR 3D Engine, WebGL Edition http://www.cubicvr.org/](https://github.com/cjcliffe/CubicVR.js)
+39.[Alon Zakai](https://github.com/kripken)
+40.[LZ4 fast compression algorithm for NodeJS](https://github.com/kripken/node-lz4)
