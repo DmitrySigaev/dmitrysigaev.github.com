@@ -38,3 +38,4 @@ tags: C++, tocheck
 31.[C++11:Defaulted and Deleted Functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2326.html)
 32.[C++ 11 FAQ от Бьярна Страуструпа](http://sergeyteplyakov.blogspot.ru/2012/05/c-11-faq.html)
 33.[canvas](http://habrahabr.ru/post/268975/)
+34.[Game:bananabread, source and port to javascript](https://github.com/kripken/BananaBread)
