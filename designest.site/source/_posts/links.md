@@ -42,3 +42,4 @@ tags: C++, tocheck
 35.[Unity games in WebGL: Owlchemy Labs’ conversion of Aaaaa! to asm.js](https://hacks.mozilla.org/2014/10/unity-games-in-webgl-owlchemy-labs-conversion-of-aaaaa-to-asm-js/)
 36.[Emscripten:C++2JS compiler](http://kripken.github.io/emscripten-site/)
 37.[GitHub: CubicVR 3D Engine, C++ version http://www.cubicvr.org/](https://github.com/cjcliffe/CubicVR)
+38.[GitHub: CubicVR 3D Engine, WebGL Edition http://www.cubicvr.org/](https://github.com/cjcliffe/CubicVR.js)
