@@ -37,3 +37,5 @@ tags: C++, tocheck
 30.[Indigo API](http://lifescience.opensource.epam.com/indigo/api/index.html#molecules)
 31.[C++11:Defaulted and Deleted Functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2326.html)
 32.[C++ 11 FAQ от Бьярна Страуструпа](http://sergeyteplyakov.blogspot.ru/2012/05/c-11-faq.html)
+
+42.[Create a TV Show Tracker using AngularJS, Node.js and MongoDB](http://sahatyalkabov.com/create-a-tv-show-tracker-using-angularjs-nodejs-and-mongodb/)
