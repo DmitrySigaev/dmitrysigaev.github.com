@@ -39,3 +39,4 @@ tags: C++, tocheck
 32.[C++ 11 FAQ от Бьярна Страуструпа](http://sergeyteplyakov.blogspot.ru/2012/05/c-11-faq.html)
 
 42.[Create a TV Show Tracker using AngularJS, Node.js and MongoDB](http://sahatyalkabov.com/create-a-tv-show-tracker-using-angularjs-nodejs-and-mongodb/)
+43.[Create a character voting app using React, Node.js, MongoDB and Socket.IO](http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/)
