@@ -37,7 +37,7 @@ tags: C++, tocheck
 30.[Indigo API](http://lifescience.opensource.epam.com/indigo/api/index.html#molecules)
 31.[C++11:Defaulted and Deleted Functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2007/n2326.html)
 32.[C++ 11 FAQ от Бьярна Страуструпа](http://sergeyteplyakov.blogspot.ru/2012/05/c-11-faq.html)
-33.[canvas](http://habrahabr.ru/post/268975/)
+33.[canvas:Рецепт вращения планет в космосе на HTML5 + JavaScript](http://habrahabr.ru/post/268975/)
 34.[Game:bananabread, source and port to javascript](https://github.com/kripken/BananaBread)
 35.[Unity games in WebGL: Owlchemy Labs’ conversion of Aaaaa! to asm.js](https://hacks.mozilla.org/2014/10/unity-games-in-webgl-owlchemy-labs-conversion-of-aaaaa-to-asm-js/)
 36.[Emscripten:C++2JS compiler](http://kripken.github.io/emscripten-site/)
