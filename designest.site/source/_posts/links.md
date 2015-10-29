@@ -52,4 +52,5 @@ tags: C++, tocheck
 54.[Web UI development: Nikita Prokopov notes](http://tonsky.me/talks/)
 55.[GraphQL from facebook](http://facebook.github.io/graphql/)
 56.[Только React.js, только хардкор (aka долой Angular и Knockout)! ](http://www.arturdr.ru/web/tolko-react-js-tolko-hardkor-aka-doloy-angular-i-knockout/)
+57.[React Starter Kit from russian team](https://github.com/kriasoft/react-starter-kit)
 
