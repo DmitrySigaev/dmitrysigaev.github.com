@@ -46,3 +46,4 @@ tags: C++, tocheck
 39.[Alon Zakai](https://github.com/kripken)
 40.[LZ4 fast compression algorithm for NodeJS](https://github.com/kripken/node-lz4)
 50.[react:Краткое руководство по React JS](http://habrahabr.ru/post/248799/)
+51.[react:Введение в React.js](http://andreysalomatin.me/vviedieniie-v-react-js/)
