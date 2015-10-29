@@ -48,3 +48,4 @@ tags: C++, tocheck
 50.[react:Краткое руководство по React JS](http://habrahabr.ru/post/248799/)
 51.[react:Введение в React.js](http://andreysalomatin.me/vviedieniie-v-react-js/)
 52.[react:testing](http://filipovskii.github.io/word-cloud-challenge/)
+53.[Фронтенд без грусти. Никита Прокопов.](https://www.youtube.com/watch?v=cRWrrHPrk9g)
