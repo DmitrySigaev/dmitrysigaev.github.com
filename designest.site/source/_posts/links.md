@@ -50,3 +50,4 @@ tags: C++, tocheck
 52.[react:testing](http://filipovskii.github.io/word-cloud-challenge/)
 53.[Фронтенд без грусти. Никита Прокопов.](https://www.youtube.com/watch?v=cRWrrHPrk9g)
 54.[Web UI development: Nikita Prokopov notes](http://tonsky.me/talks/)
+55.[GraphQL from facebook](http://facebook.github.io/graphql/)
