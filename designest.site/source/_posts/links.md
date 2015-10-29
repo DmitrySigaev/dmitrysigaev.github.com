@@ -51,3 +51,5 @@ tags: C++, tocheck
 53.[Фронтенд без грусти. Никита Прокопов.](https://www.youtube.com/watch?v=cRWrrHPrk9g)
 54.[Web UI development: Nikita Prokopov notes](http://tonsky.me/talks/)
 55.[GraphQL from facebook](http://facebook.github.io/graphql/)
+56.[Только React.js, только хардкор (aka долой Angular и Knockout)! ](http://www.arturdr.ru/web/tolko-react-js-tolko-hardkor-aka-doloy-angular-i-knockout/)
+
