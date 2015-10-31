@@ -58,3 +58,4 @@ tags: C++, tocheck
 58.[Tarkus.me(Konstantin Tarkus)](https://github.com/koistya)
 59.[Счетчик на icon](http://blog.tommoor.com/tinycon/) , [GitHub](https://github.com/tommoor/tinycon/blob/master/tinycon.js)
 60.[React-tree: 3d demo](https://github.com/poshaughnessy/react-three-demo)
+61.[React.rocks: сайт с примерами по рекату](http://react.rocks/)
