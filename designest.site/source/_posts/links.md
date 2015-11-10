@@ -61,3 +61,4 @@ tags: C++, tocheck
 61.[React.rocks: сайт с примерами по рекату](http://react.rocks/)
 62.[Sci-fi UI experiment, using CSS 3D transforms. Strangely hypnotic:demo](http://nygardk.github.io/react-scifi/), [Sci-fi UI experiment:github](https://github.com/nygardk/react-scifi)
 63.[Чтение и запись файлов в NodeJS](http://www.jstoolbox.com/2013/09/29/chtenie-i-zapis-fajlov-v-nodejs/)
+64.[Наследование и цепочка прототипов](https://developer.mozilla.org/ru/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
