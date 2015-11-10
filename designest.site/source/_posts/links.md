@@ -65,3 +65,4 @@ tags: C++, tocheck
 65[Python Tools for Visual Studio Installation](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)
 66[Бенчмарк HTML парсеров: декабрь 2012](http://habrahabr.ru/post/163979/)
 67[Node.js Convert JSON to XML, Pluralize](https://thomashunter.name/blog/node-js-convert-json-to-xml-and-pluralize/) [Github](https://github.com/davidcalhoun/jstoxml)
+68[Github:Converts XML to JSON using node-expat](https://github.com/buglabs/node-xml2json)
