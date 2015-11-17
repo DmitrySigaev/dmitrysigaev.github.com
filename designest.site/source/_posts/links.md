@@ -100,6 +100,7 @@ tags: C++, tocheck
 100.[Публикация приложений для Windows](https://dev.windows.com/ru-ru/publish)
 101.[How to preview PDFs in Windows Explorer](http://www.pcworld.com/article/2082239/how-to-preview-pdfs-in-windows-explorer.html)
 102.[.NET PDF viewer based on Chrome pdf.dll and xPDF](https://github.com/pvginkel/PdfViewer)
+103.[Video: Engaging with the Real World: Web Bluetooth and Physical Web (Chrome Dev Summit 2015)](https://www.youtube.com/watch?v=_BUwOBdLjzQ)
 
 
 
