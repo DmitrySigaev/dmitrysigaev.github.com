@@ -110,6 +110,104 @@ Modify: 2015-12-25 19:05:40.000000000 +0300
 Change: 2016-01-25 20:37:42.908028600 +0300
  Birth: 2016-01-25 18:04:51.339701300 +0300
 ```
+Поменялась дата модификации файла.
+
+Давайте теперь перейдем к сути топика, т.е. сделаем коммит в git.
+
+```
+$ git add git-date-change.md
+```
+
+Смотрим статус:
+```
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   git-date-change.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        mingw32/
+```
+Исправляем дату коммита:
+```
+$ git commit --date="$new_date" -m "How to change date of commit"
+[master 4bce82a] How to change date of commit
+ Date: Fri Dec 25 19:05:40 2015 +0300
+ 1 file changed, 122 insertions(+)
+ create mode 100644 designest.site/source/_posts/git-date-change.md
+```
+Смторим в лог гита:
+```
+$ git --no-pager log -1 --stat --pretty=fuller
+commit 4bce82af9122ba1f497b13e9cfd0863eacb05662
+Author:     Dmitry Sigaev <Dmitry_Sigaev@epam.com>
+AuthorDate: Fri Dec 25 19:05:40 2015 +0300
+Commit:     Dmitry Sigaev <Dmitry_Sigaev@epam.com>
+CommitDate: Mon Jan 25 20:52:00 2016 +0300
+
+    How to change date of commit
+
+ designest.site/source/_posts/git-date-change.md | 122 ++++++++++++++++++++++++
+ 1 file changed, 122 insertions(+)
+```
+Правим дату последнего коммит без правки комминтария к комиту
+
+```
+$ git commit --amend --date="$new_date" -C HEAD
+[master 9a5f902] How to change date of commit
+ Date: Fri Dec 25 19:05:40 2015 +0300
+ 1 file changed, 122 insertions(+)
+ create mode 100644 designest.site/source/_posts/git-date-change.md
+
+```
+Опять смотрим лог:
+```
+$ git --no-pager log -1 --stat --pretty=fuller
+commit 9a5f9025ed3d399d5f1ba324bb08db1357442cd1
+Author:     Dmitry Sigaev <Dmitry_Sigaev@epam.com>
+AuthorDate: Fri Dec 25 19:05:40 2015 +0300
+Commit:     Dmitry Sigaev <Dmitry_Sigaev@epam.com>
+CommitDate: Mon Jan 25 20:55:49 2016 +0300
+
+    How to change date of commit
+
+ designest.site/source/_posts/git-date-change.md | 122 ++++++++++++++++++++++++
+ 1 file changed, 122 insertions(+)
+```
+Как видно CommitDate остается прежним.
+Я бы хотел бы поправить и эту запись. Поэтому правим:
+```
+$  GIT_COMMITTER_DATE="$new_date"  git commit --amend --date="$new_date" -C HEAD
+[master 0ea5418] How to change date of commit
+ Date: Fri Dec 25 19:05:40 2015 +0300
+ 1 file changed, 122 insertions(+)
+ create mode 100644 designest.site/source/_posts/git-date-change.md
+```
+вот что получилось в логе:
+```
+$ git --no-pager log -1 --stat --pretty=fuller
+commit 0ea541838d6777f5f1618efb5d9713282042da7e
+Author:     Dmitry Sigaev <Dmitry_Sigaev@epam.com>
+AuthorDate: Fri Dec 25 19:05:40 2015 +0300
+Commit:     Dmitry Sigaev <Dmitry_Sigaev@epam.com>
+CommitDate: Fri Dec 25 19:05:40 2015 +0300
+
+    How to change date of commit
+
+ designest.site/source/_posts/git-date-change.md | 122 ++++++++++++++++++++++++
+ 1 file changed, 122 insertions(+)
+```
+ну далее пушим в origin
+
+
+
+
+
 
 
 
