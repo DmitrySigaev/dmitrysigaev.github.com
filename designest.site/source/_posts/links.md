@@ -68,5 +68,7 @@ tags: C++, tocheck
 68.[Github:Converts XML to JSON using node-expat](https://github.com/buglabs/node-xml2json)
 69.[Github:xmldom](https://github.com/jindw/xmldom/issues/138)
 70.[Создание своего первого приложения с использованием средств Visual Studio Tools для Apache Cordova](https://msdn.microsoft.com/ru-ru/library/dn757057.aspx)
-71/[Install Visual Studio Tools for Apache Cordova](http://taco.visualstudio.com/en-us/docs/install-vs-tools-apache-cordova/)
+71.[Install Visual Studio Tools for Apache Cordova](http://taco.visualstudio.com/en-us/docs/install-vs-tools-apache-cordova/)
+72.[Сложный SVG на клиенте и сервере](http://habrahabr.ru/post/141469/)
+
 
