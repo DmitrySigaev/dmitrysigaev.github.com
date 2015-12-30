@@ -74,3 +74,5 @@ tags: C++, tocheck
 74.[3D scanning for free! video](https://www.youtube.com/watch?v=D6eqW6yk50k)
 75.[Ремонт и поиск поломок источника бесперебойного питания](https://www.youtube.com/watch?v=fWt-5n1CL2E)
 76.[Спецификация ecma262 2015](https://tc39.github.io/ecma262/#sec-symbol.match)
+77.[JavaScript: The Definitive Guide, Second Edition, January 1997](http://web.deu.edu.tr/doc/oreily/web/jscript/index.html)
+
