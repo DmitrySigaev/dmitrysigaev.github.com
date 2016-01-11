@@ -71,5 +71,6 @@ tags: C++, tocheck
 71.[Install Visual Studio Tools for Apache Cordova](http://taco.visualstudio.com/en-us/docs/install-vs-tools-apache-cordova/)
 72.[Сложный SVG на клиенте и сервере](http://habrahabr.ru/post/141469/)
 73.[Двенадцать простых начальных шагов разработки модуля для Node.js](http://habrahabr.ru/post/262057/)
+74.[3D scanning for free! video](https://www.youtube.com/watch?v=D6eqW6yk50k)
 
 
