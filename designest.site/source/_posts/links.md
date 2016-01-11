@@ -91,6 +91,7 @@ tags: C++, tocheck
 91.[Компиляция iOS приложений для Windows Store](https://habrahabr.ru/company/microsoft/blog/264321/)
 92.[С телефона в облака: Azure Mobile Services. С чего начать?](https://habrahabr.ru/company/dataart/blog/276031/)
 93.[Azure Machine Learning: разработка сервисов машинного обучения и их использование в мобильном приложении](https://habrahabr.ru/company/microsoft/blog/275475/)
+94.[Gaurav Seth & Steve Lucco - Inside Chakra - JSConf US 2015](https://www.youtube.com/watch?v=en1VCmbI7Fc)
 
 
 
