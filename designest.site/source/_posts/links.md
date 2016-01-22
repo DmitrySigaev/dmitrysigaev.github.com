@@ -90,6 +90,7 @@ tags: C++, tocheck
 90.[Знакомимся с элементами управления библиотеки WinJS](http://habrahabr.ru/company/microsoft/blog/238709/)
 91.[Компиляция iOS приложений для Windows Store](https://habrahabr.ru/company/microsoft/blog/264321/)
 92.[С телефона в облака: Azure Mobile Services. С чего начать?](https://habrahabr.ru/company/dataart/blog/276031/)
+93.[Azure Machine Learning: разработка сервисов машинного обучения и их использование в мобильном приложении](https://habrahabr.ru/company/microsoft/blog/275475/)
 
 
 
