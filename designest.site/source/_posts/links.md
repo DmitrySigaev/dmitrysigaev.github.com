@@ -92,6 +92,9 @@ tags: C++, tocheck
 92.[С телефона в облака: Azure Mobile Services. С чего начать?](https://habrahabr.ru/company/dataart/blog/276031/)
 93.[Azure Machine Learning: разработка сервисов машинного обучения и их использование в мобильном приложении](https://habrahabr.ru/company/microsoft/blog/275475/)
 94.[Gaurav Seth & Steve Lucco - Inside Chakra - JSConf US 2015](https://www.youtube.com/watch?v=en1VCmbI7Fc)
+95.[ChakraCore: проверка JavaScript-движка для Microsoft Edge](https://habrahabr.ru/company/pvs-studio/blog/275701/)
+96.[Исходный код JavaScript-движка ChakraCore выложен на GitHub](https://habrahabr.ru/company/microsoft/blog/275067/)
+
 
 
 
