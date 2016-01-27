@@ -89,6 +89,7 @@ tags: C++, tocheck
 89.[Building Xbox One Apps using HTML and JavaScript](https://channel9.msdn.com/Events/Build/2014/2-647)
 90.[Знакомимся с элементами управления библиотеки WinJS](http://habrahabr.ru/company/microsoft/blog/238709/)
 91.[Компиляция iOS приложений для Windows Store](https://habrahabr.ru/company/microsoft/blog/264321/)
+92.[С телефона в облака: Azure Mobile Services. С чего начать?](https://habrahabr.ru/company/dataart/blog/276031/)
 
 
 
