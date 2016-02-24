@@ -109,6 +109,7 @@ tags: C++, tocheck
 109.[CueMol: Molecular Visualization Framework](http://cuemol.osdn.jp/en/index.php?FrontPage)
 110.[ChemDoodle Web Components library ](https://web.chemdoodle.com/about/)
 111.[MolView: an attempt to get the cloud into chemistry classrooms](http://confchem.ccce.divched.org/2015FallCCCENLP9)
+112.[Molecule editor:Wiki](https://en.wikipedia.org/wiki/Molecule_editor)
 
 
 
