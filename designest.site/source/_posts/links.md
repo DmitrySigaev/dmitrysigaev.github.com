@@ -110,6 +110,13 @@ tags: C++, tocheck
 110.[ChemDoodle Web Components library ](https://web.chemdoodle.com/about/)
 111.[MolView: an attempt to get the cloud into chemistry classrooms](http://confchem.ccce.divched.org/2015FallCCCENLP9)
 112.[Molecule editor:Wiki](https://en.wikipedia.org/wiki/Molecule_editor)
+113.[Начинаем работать с browserify](https://habrahabr.ru/post/224825/)
+114.[Пишем модуль на C++ для nodejs на примере работы с MySQL](https://habrahabr.ru/post/154007/)
+115.[node-drone-video](https://github.com/TooTallNate/node-drone-video)
+116.[Parrot and Node js](https://n8.io/)
+117.[webinar:A Tour of Modern C++: Video](https://www.youtube.com/watch?v=iWvcoIKSaoc)
+118.[Demo project: A Tour of Modern C++:](https://github.com/nesteruk/ModernCpp)
+
 
 
 
