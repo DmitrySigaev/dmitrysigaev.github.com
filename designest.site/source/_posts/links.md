@@ -116,7 +116,7 @@ tags: C++, tocheck
 116.[Parrot and Node js](https://n8.io/)
 117.[webinar:A Tour of Modern C++: Video](https://www.youtube.com/watch?v=iWvcoIKSaoc)
 118.[Demo project: A Tour of Modern C++:](https://github.com/nesteruk/ModernCpp)
-
+119.[C++ Dynamic Linking vs Static Linking](https://youtu.be/Jzh4ZULXsvo)
 
 
 
