@@ -108,6 +108,7 @@ tags: C++, tocheck
 108.[Electron density visualization (isomesh and volume rendering) by WebGL](https://webglmol.osdn.jp/mapviewer/map.html)
 109.[CueMol: Molecular Visualization Framework](http://cuemol.osdn.jp/en/index.php?FrontPage)
 110.[ChemDoodle Web Components library ](https://web.chemdoodle.com/about/)
+111.[MolView: an attempt to get the cloud into chemistry classrooms](http://confchem.ccce.divched.org/2015FallCCCENLP9)
 
 
 
