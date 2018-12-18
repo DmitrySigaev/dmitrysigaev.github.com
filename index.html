@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Indigo demo</title>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="libindigo.js"></script>
-    <script type="text/javascript">
-      $( window ).on( "load", function() {
 
-        setTimeout(function() { 
-           var ver = Module.ccall('indigoVersion', 'string', []);
-           $("div.version").text(ver);
-           var m = 'c1ccccc1N';
-           $("div.mol").text(m);
-           var mol = Module.ccall('indigoLoadMoleculeFromString', 'number', ['string'], [m]);
-           var w = Module.ccall('indigoMolecularWeight', 'number', ['number'], [mol]);
-           $("div.mass").text(w);
-        }, 1000);
-      });
-    </script>
   </head>
 
   <body>
